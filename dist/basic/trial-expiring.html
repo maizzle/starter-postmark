@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta charset="utf-8">
+
+  <!--[if !mso]>
+<!-->
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&amp;display=swap" rel="stylesheet">
+
+  <!--<![endif]-->
+
+  <!--[if mso]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <style>
+    table {border-collapse: collapse;}
+    td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
+  </style>
+  <![endif]-->
+  <style>
+    @media screen {
+      img {
+        max-width: 100%;
+      }
+      .all-font-sans {
+        font-family: "Nunito Sans", -apple-system, "Segoe UI", sans-serif !important;
+      }
+    }
+    @media (max-width: 600px) {
+      u~div .email-wrapper {
+        min-width: 100vw;
+      }
+      .button {
+        width: 100% !important;
+        text-align: center !important;
+      }
+      .sm-w-full {
+        width: 100% !important;
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      body,
+      .email-body,
+      .email-body_inner,
+      .email-content,
+      .email-wrapper,
+      .email-masthead,
+      .email-footer {
+        background-color: #333333 !important;
+        color: #ffffff !important;
+      }
+      p,
+      h1,
+      h2,
+      h3 {
+        color: #ffffff !important;
+      }
+      .attributes_content {
+        background-color: #222222 !important;
+      }
+      .email-masthead_name {
+        text-shadow: none !important;
+      }
+    }
+  </style>
+</head>
+<body style="width: 100%; margin: 0; padding: 0; word-break: break-word; -webkit-font-smoothing: antialiased; background-color: #f2f4f6;">
+  <table class="email-wrapper all-font-sans" style="background-color: #f2f4f6; width: 100%;" bgcolor="#f2f4f6" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+      <td align="center">
+        <table class="email-content" style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
+          <tr>
+            <td align="center" class="email-masthead" style="padding-top: 25px; padding-bottom: 25px; text-align: center; font-size: 16px;">
+              <a href="https://example.com" class="email-masthead_name" style="text-shadow: 0 1px 0 #ffffff; font-weight: 700; color: #a8aaaf; font-size: 16px; text-decoration: none;">
+                [Product Name]
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td class="email-body" style="width: 100%;">
+              <table align="center" class="email-body_inner sm-w-full" style="background-color: #ffffff; margin-left: auto; margin-right: auto; width: 570px;" bgcolor="#ffffff" cellpadding="0" cellspacing="0" role="presentation">
+                <tr>
+                  <td style="padding: 45px;">
+                    <div style="font-size: 16px;">
+                      <h1 style="font-weight: 700; margin-top: 0; text-align: left; color: #333333; font-size: 22px;">Your [Product Name] trial ends in 3 days</h1>
+                      <p style="line-height: 24px; margin-top: 6px; margin-bottom: 20px; color: #51545e; font-size: 16px;">
+                        Thanks for trying [Product Name]. You've added a lot of data, so here are several options for you to consider going forward.
+                      </p>
+                      <table align="center" style="margin-top: 30px; margin-bottom: 30px; margin-left: auto; margin-right: auto; text-align: center; width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                          <td align="center">
+                            <table style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
+                              <tr>
+                                <td align="center" style="font-size: 16px;">
+                                  <a href="{{action_url}}" class="button" target="_blank" style="display: inline-block; color: #ffffff; text-decoration: none; border-radius: 3px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16); background-color: #22bc66; border-color: #22bc66; border-style: solid; border-width: 10px 18px;">Upgrade your account</a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <p style="line-height: 24px; margin-top: 6px; margin-bottom: 20px; color: #51545e; font-size: 16px;">
+                        If you're not ready to upgrade to a paying account, you have a few other options available to you...
+                      </p>
+                      <table style="margin-bottom: 21px; width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                          <td class="attributes_content" style="background-color: #f4f4f7; padding: 16px;" bgcolor="#f4f4f7">
+                            <table style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
+                              <tr>
+                                <td style="padding-bottom: 16px;">
+                                  <div style="font-size: 16px;">
+                                    <strong>
+                                    <a href="{{trial_extension_url}}" style="color: #3869d4;">Restart your trial</a>
+                                  </strong>
+                                    - If you didn't get a chance to fully try out the product or need a little more time to evaluate, just let us know. Simply reply to this email and we'll extend your trial period.
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 16px;">
+                                  <div style="font-size: 16px;">
+                                    <strong>
+                                    <a href="{{feedback_url}}" style="color: #3869d4;">Share feedback</a>
+                                  </strong>
+                                    - If [Product Name] isn't right for you, let us know what you were looking for and we might be able to suggest some alternatives that might be a better fit.
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 16px;">
+                                  <div style="font-size: 16px;">
+                                    <strong>
+                                    <a href="{{export_url}}" style="color: #3869d4;">Export your data</a>
+                                  </strong>
+                                    - If [Product Name] wasn't a good fit, you can export your data for use elsewhere.
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div style="font-size: 16px;">
+                                    <strong>
+                                    <a href="{{close_account_url}}" style="color: #3869d4;">Close your account</a>
+                                  </strong>
+                                    - You can close your account and delete your data. Or, do nothing and we'll automatically close it and delete your data for you in 90 days.
+                                    But don't worry, we'll send you another email before that happens.
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <p style="line-height: 24px; margin-top: 6px; margin-bottom: 20px; color: #51545e; font-size: 16px;">
+                        Regardless of your choice, we want to say thank you for trying [Product Name].
+                        We know it's an investment of your time, and we appreciate you giving us a chance.
+                      </p>
+                      <p style="line-height: 24px; margin-top: 6px; margin-bottom: 20px; color: #51545e; font-size: 16px;">
+                        Thanks,
+                        <br>[Sender Name] and the [Product Name] Team
+                      </p>
+                      <p style="line-height: 24px; margin-top: 6px; margin-bottom: 20px; color: #51545e; font-size: 16px;">
+                        <strong>P.S.</strong> If you have any questions or need any help, please don't hesitate to reach out.
+                        You can reply to this email or join us on live chat during business hours.
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; text-align: center; width: 570px;" cellpadding="0" cellspacing="0" role="presentation">
+                <tr>
+                  <td align="center" style="padding: 45px; font-size: 16px;">
+                    <p style="line-height: 24px; margin-top: 6px; margin-bottom: 20px; text-align: center; color: #a8aaaf; font-size: 13px;">&copy; 2019 [Product Name]. All rights reserved.</p>
+                    <p style="line-height: 24px; margin-top: 6px; margin-bottom: 20px; text-align: center; color: #a8aaaf; font-size: 13px;">
+                      [Company Name, LLC]
+                      <br>1234 Street Rd.
+                      <br>Suite 1234
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

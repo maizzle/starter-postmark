@@ -1,0 +1,25 @@
+/*! purgecss start ignore */
+
+body {
+  @apply w-full m-0 p-0;
+  word-break: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  border: 0;
+  @apply leading-full align-middle;
+}
+
+@screen all {
+  img {
+    @apply max-w-full;
+  }
+}
+
+@screen sm {
+  u ~ div .email-wrapper {
+    @apply min-w-screen;
+  }
+}
+/*! purgecss end ignore */

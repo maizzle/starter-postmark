@@ -1,0 +1,50 @@
+---
+bodyClass: bg-gray-postmark-lighter
+---
+
+{% block template %}
+<table class="email-wrapper w-full bg-gray-postmark-lighter all-font-sans">
+  <tr>
+    <td align="center">
+      <table class="email-content w-full">
+        {% include "src/partials/header.njk" %}
+
+        <tr>
+          <td class="email-body w-full bg-white">
+            <table align="center" class="email-body_inner w-570 bg-white mx-auto sm-w-full">
+              <tr>
+                <td class="p-45">
+                  <div class="text-base">
+                    {% raw %}{{body}}{% endraw %}
+                    <br>
+                    <br> {% raw %}{{#attachment_details}}{% endraw %}
+                    <table class="w-full mb-21">
+                      <tr>
+                        <td class="attributes_content p-16 text-base bg-gray-postmark-lightest">
+                          <table class="w-full">
+                            {% raw %}{{#each . }}{% endraw %}
+                            <tr>
+                              <td class="text-base"><a href="{% raw %}{{attachment_url}}{% endraw %}" class="text-blue-postmark">{% raw %}{{attachment_name}}{% endraw %}</a> <span>({% raw %}{{attachment_size}} {{attachment_type}}{% endraw %})</span></td>
+                            </tr>
+                            {% raw %}{{/each}}{% endraw %}
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    {% raw %}{{/attachment_details}}{% endraw %}
+                    <p class="mt-6 mb-20 text-base leading-24 text-gray-postmark-dark">By {% raw %}{{commenter_name}} at {{timestamp}}{% endraw %}</p>
+                    <p class="mt-6 mb-20 text-xs leading-24 text-gray-postmark-dark"><a href="{% raw %}{{action_url}}{% endraw %}" class="text-blue-postmark">View the comment</a> or <a href="{% raw %}{{notifications_url}}{% endraw %}" class="text-blue-postmark">Manage notifications</a></p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        {% include "src/partials/footer.njk" %}
+      </table>
+    </td>
+  </tr>
+</table>
+{% endblock %}
+

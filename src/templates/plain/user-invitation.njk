@@ -1,0 +1,65 @@
+{% block template %}
+<table class="email-wrapper w-full all-font-sans">
+  <tr>
+    <td align="center">
+      <table class="email-content w-full">
+        {% include "src/partials/header.njk" %}
+
+        <tr>
+          <td class="email-body w-full bg-white">
+            <table align="center" class="email-body_inner w-570 bg-white mx-auto sm-w-full">
+              <tr>
+                <td class="p-45">
+                  <div class="text-base">
+                    <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">Hi, {% raw %}{{ name }}{% endraw %}!</h1>
+                    <p class="mt-6 mb-20 text-base leading-24 text-gray-postmark-dark">
+                      {% raw %}{{invite_sender_name}}{% endraw %} with {% raw %}{{invite_sender_organization_name}}{% endraw %} has invited you to use {{ page.company.product }} to collaborate with them.
+                      Use the button below to set up your account and get started:
+                    </p>
+                    <table align="center" class="w-full text-center my-30 mx-auto">
+                      <tr>
+                        <td align="center">
+                          <table class="w-full">
+                            <tr>
+                              <td align="center" class="text-base">
+                                <a href="{% raw %}{{action_url}}{% endraw %}" class="button button--blue" target="_blank">Set up account</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <p class="mt-6 mb-20 text-base leading-24 text-gray-postmark-dark">
+                      If you have any questions for {% raw %}{{invite_sender_name}}{% endraw %}, you can reply to this email and it will go right to them.
+                      Alternatively, feel free to <a href="mailto:{% raw %}{{support_email}}{% endraw %}" class="text-blue-postmark">contact our customer success team</a> anytime.
+                      (We're lightning quick at replying.) We also offer <a href="{% raw %}{{live_chat_url}}{% endraw %}" class="text-blue-postmark">live chat</a> during business hours.
+                    </p>
+                    <p class="mt-6 mb-20 text-base leading-24 text-gray-postmark-dark">
+                      Welcome aboard,
+                      <br>The {{ page.company.product }} Team
+                    </p>
+                    <p class="mt-6 mb-20 text-base leading-24 text-gray-postmark-dark">
+                      <strong>P.S.</strong> Need help getting started? Check out our <a href="{% raw %}{{help_url}}{% endraw %}" class="text-blue-postmark">help documentation</a>.
+                    </p>
+                    <table class="body-sub">
+                      <tr>
+                        <td>
+                          <p class="mt-6 mb-20 text-xs leading-24 text-gray-postmark-dark">If you're having trouble with the button above, copy and paste the URL below into your web browser.</p>
+                          <p class="mt-6 mb-20 text-xs leading-24 text-gray-postmark-dark">{% raw %}{{action_url}}{% endraw %}</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        {% include "src/partials/footer.njk" %}
+      </table>
+    </td>
+  </tr>
+</table>
+{% endblock %}
+
