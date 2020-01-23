@@ -1,7 +1,7 @@
 module.exports = {
   prefix: '',
   important: true,
-  separator: '-',
+  separator: ':',
   theme: {
     screens: {
       all: {'raw': 'screen'},
