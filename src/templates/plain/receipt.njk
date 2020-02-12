@@ -1,3 +1,5 @@
+{% extends "src/layouts/default.njk" %}
+
 {% block template %}
 <table class="email-wrapper w-full all:font-sans">
   <tr>
@@ -57,15 +59,15 @@
                             </tr>
                             {% raw %}{{#each receipt_details}}{% endraw %}
                             <tr>
-                              <td class="w-4-5 text-base leading-18 py-10 text-gray-postmark-dark">{% raw %}{{description}}{% endraw %}</td>
-                              <td align="right" class="w-1-5 text-base text-right">{% raw %}{{amount}}{% endraw %}</td>
+                              <td class="w-4/5 text-base leading-18 py-10 text-gray-postmark-dark">{% raw %}{{description}}{% endraw %}</td>
+                              <td align="right" class="w-1/5 text-base text-right">{% raw %}{{amount}}{% endraw %}</td>
                             </tr>
                             {% raw %}{{/each}}{% endraw %}
                             <tr>
-                              <td class="purchase_footer w-4-5">
+                              <td class="purchase_footer w-4/5">
                                 <p align="right" class="m-0 pr-16 text-base leading-24 text-right text-gray-postmark-darker font-bold">Total</p>
                               </td>
-                              <td class="purchase_footer w-1-5">
+                              <td class="purchase_footer w-1/5">
                                 <p align="right" class="m-0 text-base leading-24 text-right text-gray-postmark-darker font-bold">{% raw %}{{total}}{% endraw %}</p>
                               </td>
                             </tr>

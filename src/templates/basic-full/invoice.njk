@@ -3,6 +3,8 @@ preheader: "This is an invoice for your purchase on {{ purchase_date }}. Please 
 bodyClass: bg-gray-postmark-lighter
 ---
 
+{% extends "src/layouts/default.njk" %}
+
 {% block template %}
 <table class="email-wrapper w-full bg-gray-postmark-lighter all:font-sans">
   <tr>
@@ -71,19 +73,19 @@ bodyClass: bg-gray-postmark-lighter
                             </tr>
                             {% raw %}{{#each invoice_details}}{% endraw %}
                             <tr>
-                              <td class="w-4-5 text-base leading-18 py-10 text-gray-postmark-dark">
+                              <td class="w-4/5 text-base leading-18 py-10 text-gray-postmark-dark">
                                 {% raw %}{{description}}{% endraw %}
                               </td>
-                              <td align="right" class="w-1-5 text-base text-right">
+                              <td align="right" class="w-1/5 text-base text-right">
                                 {% raw %}{{amount}}{% endraw %}
                               </td>
                             </tr>
                             {% raw %}{{/each}}{% endraw %}
                             <tr>
-                              <td class="purchase_footer w-4-5">
+                              <td class="purchase_footer w-4/5">
                                 <p align="right" class="m-0 pr-16 text-base leading-24 text-right font-bold text-gray-postmark-darker">Total</p>
                               </td>
-                              <td class="purchase_footer w-1-5">
+                              <td class="purchase_footer w-1/5">
                                 <p align="right" class="m-0 text-base leading-24 text-right font-bold text-gray-postmark-darker">{% raw %}{{total}}{% endraw %}</p>
                               </td>
                             </tr>
