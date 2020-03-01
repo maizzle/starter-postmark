@@ -274,10 +274,6 @@ module.exports = {
       extrabold: 800,
       black: 900,
     },
-    gradients: {
-      'black-transparent': ['#000', 'transparent'],
-      'white-transparent': ['#fff', 'transparent'],
-    },
     height: theme => ({
       auto: 'auto',
       ...theme('spacing'),
@@ -302,19 +298,6 @@ module.exports = {
       relaxed: '1.625',
       loose: '2',
       full: '100%',
-    }),
-    linearGradients: theme => ({
-      colors: theme('gradients'),
-      directions: {
-        't': 'to top',
-        'tr': 'to top right',
-        'r': 'to right',
-        'br': 'to bottom right',
-        'b': 'to bottom',
-        'bl': 'to bottom left',
-        'l': 'to left',
-        'tl': 'to top left',
-      },
     }),
     listStyleType: {
       none: 'none',
@@ -435,26 +418,6 @@ module.exports = {
       '12': '12',
     },
     padding: theme => theme('spacing'),
-    radialGradients: theme => ({
-      colors: theme('gradients'),
-      positions: {
-        'default': 'center',
-        't': 'top',
-        'tr': 'top right',
-        'r': 'right',
-        'br': 'bottom right',
-        'b': 'bottom',
-        'bl': 'bottom left',
-        'l': 'left',
-        'tl': 'top left',
-      },
-      shapes: {
-        default: 'ellipse',
-      },
-      sizes: {
-        default: 'closest-side',
-      },
-    }),
     stroke: {
       current: 'currentColor',
     },
@@ -713,7 +676,6 @@ module.exports = {
     justifyContent: ['responsive'],
     letterSpacing: ['responsive'],
     lineHeight: ['responsive'],
-    linearGradients: ['responsive'],
     listStylePosition: ['responsive'],
     listStyleType: ['responsive'],
     margin: ['responsive'],
@@ -731,7 +693,6 @@ module.exports = {
     placeholderColor: ['responsive', 'focus'],
     pointerEvents: [],
     position: ['responsive'],
-    radialGradients: ['responsive'],
     resize: [],
     stroke: [],
     strokeWidth: [],
@@ -771,7 +732,5 @@ module.exports = {
     accessibility: false,
     container: false,
   },
-  plugins: [
-    require('tailwindcss-gradients')(),
-  ],
+  plugins: [],
 }
