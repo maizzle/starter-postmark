@@ -5,7 +5,7 @@
   <meta name="x-apple-disable-message-reformatting">
   <meta charset="{{ page.charset or 'utf-8' }}">
   {% if page.title %}<title>{{ page.title }}</title>{% endif %}
-  {% if page.googleFonts %}<!--[if !mso]><!--><link href="https://fonts.googleapis.com/css?family={{ page.googleFonts }}" rel="stylesheet"><!--<![endif]-->{%- endif %}
+  {% if page.googleFonts %}<link href="https://fonts.googleapis.com/css?family={{ page.googleFonts }}" rel="stylesheet" media="screen">{%- endif %}
   <!--[if mso]>
   <xml>
     <o:OfficeDocumentSettings>
