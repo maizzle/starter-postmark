@@ -4,7 +4,6 @@ module.exports = {
   separator: ':',
   theme: {
     screens: {
-      all: {'raw': 'screen'},
       sm: {'max': '600px'},
       dark: {'raw': '(prefers-color-scheme: dark)'},
     },
