@@ -20,7 +20,7 @@ npm install -g @maizzle/cli
 Scaffold a new project with this starter:
 
 ```sh
-maizzle new https://github.com/maizzle/starter-postmark.git && cd starter-postmark
+maizzle new maizzle/starter-postmark
 ```
 
 Develop locally:
@@ -29,13 +29,7 @@ Develop locally:
 maizzle serve
 ```
 
-Build for staging (readable markup):
-
-```sh
-maizzle build staging
-```
-
-Build for production (minified code):
+Build for production:
 
 ```sh
 maizzle build production

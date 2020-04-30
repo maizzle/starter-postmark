@@ -1,7 +1,18 @@
+/*
+|-------------------------------------------------------------------------------
+| Production config           https://maizzle.com/docs/environments/#production
+|-------------------------------------------------------------------------------
+|
+| This is where you define settings that optimize your emails for production.
+| These will be merged on top of the base config.js, so you only need to
+| specify the options that are changing.
+|
+*/
+
 module.exports = {
   build: {
     destination: {
-      path: 'dist/production',
+      path: 'dist',
     },
   },
 
@@ -9,21 +20,11 @@ module.exports = {
     enabled: true,
   },
 
-  cleanup: {
-    removeUnusedCSS: {
-      enabled: true,
-      uglify: true,
-    },
-    replaceStrings: {
-      '\\s(style|class)(=""|(?=>)|(?=\\s))+': '', // remove empty style or class attributes
-    },
+  prettify: {
+    enabled: true,
   },
 
-  minify: {
+  removeUnusedCSS: {
     enabled: true,
-    minifyCSS: true,
-    maxLineLength: 500,
-    collapseWhitespace: true,
-    processConditionalComments: true,
   },
 }
