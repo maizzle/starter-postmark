@@ -15,15 +15,12 @@ module.exports = {
       path: 'dist',
     },
   },
-
   inlineCSS: {
     enabled: true,
   },
-
   prettify: {
     enabled: true,
   },
-
   removeUnusedCSS: {
     enabled: true,
   },

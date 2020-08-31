@@ -1,12 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "build": "maizzle build",
-    "build:production": "maizzle build production",
+    "local": "maizzle build",
+    "production": "maizzle build production",
     "watch": "maizzle serve"
   },
   "dependencies": {
-    "@maizzle/framework": "^1.1.1"
+    "@maizzle/framework": "^1.4.3"
   },
   "browserslist": [
     "> 1%"

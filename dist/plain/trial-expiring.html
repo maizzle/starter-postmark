@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&amp;amp;display=swap" rel="stylesheet" media="screen">
-    <!--[if mso|ie]>
+    <!--[if mso]>
     <xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml>
     <style>
       td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
@@ -19,10 +19,6 @@
         .button {
           width: 100% !important;
           text-align: center !important;
-        }
-
-        .sm-w-full {
-          width: 100% !important;
         }
       }
 
@@ -54,11 +50,17 @@
           text-shadow: none !important;
         }
       }
+
+      @media (max-width: 600px) {
+        .sm-w-full {
+          width: 100% !important;
+        }
+      }
     </style>
   </head>
 
   <body style="margin: 0; padding: 0; width: 100%; word-break: break-word; -webkit-font-smoothing: antialiased;">
-    <div role="article" aria-roledescription="email" aria-label lang="en">
+    <div role="article" aria-roledescription="email" aria-label="" lang="en">
       <table class="email-wrapper" style="font-family: 'Nunito Sans', -apple-system, 'Segoe UI', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
         <tr>
           <td align="center">
@@ -76,7 +78,7 @@
                     <tr>
                       <td style="padding: 45px;">
                         <div style="font-size: 16px;">
-                          <h1 style="font-weight: 700; font-size: 22px; margin-top: 0; text-align: left; color: #333333;">Your {{ page.company.product }} trial ends in 3 days</h1>
+                          <h1 style="font-weight: 700; font-size: 24px; margin-top: 0; text-align: left; color: #333333;">Your {{ page.company.product }} trial ends in 3 days</h1>
                           <p style="font-size: 16px; line-height: 24px; margin-top: 6px; margin-bottom: 20px; color: #51545e;">
                             Thanks for trying {{ page.company.product }}. You've added a lot of data, so here are several options for you to consider going forward.
                           </p>
