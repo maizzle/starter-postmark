@@ -11,8 +11,10 @@
 
 module.exports = {
   build: {
-    destination: {
-      path: 'dist',
+    templates: {
+      destination: {
+        path: 'dist',
+      },
     },
   },
   inlineCSS: {
