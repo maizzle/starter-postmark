@@ -31,8 +31,5 @@ module.exports = {
     sender: '[Sender Name]',
   },
   googleFonts: 'Nunito+Sans:400,700&amp;display=swap',
-  year() {
-    const date = new Date()
-    return date.getFullYear()
-  },
+  year: () => new Date().getFullYear(),
 }
