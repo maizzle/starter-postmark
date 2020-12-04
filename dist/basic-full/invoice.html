@@ -17,8 +17,8 @@
     <style>
       @media (max-width: 600px) {
         .button {
-          width: 100% !important;
           text-align: center !important;
+          width: 100% !important;
         }
       }
 
@@ -37,7 +37,6 @@
 
         p,
         h1,
-        h2,
         h3 {
           color: #ffffff !important;
         }
@@ -62,10 +61,10 @@
   <body style="margin: 0; padding: 0; width: 100%; word-break: break-word; -webkit-font-smoothing: antialiased; background-color: #f2f4f6;">
     <div style="display: none;">{{ page.preheader }}</div>
     <div role="article" aria-roledescription="email" aria-label="" lang="en">
-      <table class="email-wrapper" style="background-color: #f2f4f6; font-family: 'Nunito Sans', -apple-system, 'Segoe UI', sans-serif; width: 100%;" width="100%" bgcolor="#f2f4f6" cellpadding="0" cellspacing="0" role="presentation">
+      <table class="email-wrapper" style="background-color: #f2f4f6; font-family: 'Nunito Sans', -apple-system, 'Segoe UI', sans-serif; width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
         <tr>
           <td align="center">
-            <table class="email-content" style="width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+            <table class="email-content" style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
               <tr>
                 <td align="center" class="email-masthead" style="font-size: 16px; padding-top: 25px; padding-bottom: 25px; text-align: center;">
                   <a href="https://example.com" class="email-masthead_name" style="text-shadow: 0 1px 0 #ffffff; font-weight: 700; font-size: 16px; color: #a8aaaf; text-decoration: none;">
@@ -74,17 +73,17 @@
                 </td>
               </tr>
               <tr>
-                <td class="email-body" style="background-color: #ffffff; width: 100%;" width="100%" bgcolor="#ffffff">
-                  <table align="center" class="email-body_inner sm-w-full" style="background-color: #ffffff; margin-left: auto; margin-right: auto; width: 570px;" width="570" bgcolor="#ffffff" cellpadding="0" cellspacing="0" role="presentation">
+                <td class="email-body" style="background-color: #ffffff; width: 100%;">
+                  <table align="center" class="email-body_inner sm-w-full" style="background-color: #ffffff; margin-left: auto; margin-right: auto; width: 570px;" cellpadding="0" cellspacing="0" role="presentation">
                     <tr>
                       <td style="padding: 45px;">
                         <div style="font-size: 16px;">
                           <h1 style="font-weight: 700; font-size: 24px; margin-top: 0; text-align: left; color: #333333;">Hi {{name}},</h1>
                           <p style="font-size: 16px; line-height: 24px; margin-top: 6px; margin-bottom: 20px; color: #51545e;">Thanks for using {{ page.company.product }}. This is an invoice for your recent purchase.</p>
-                          <table style="margin-bottom: 21px; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                          <table style="margin-bottom: 21px; width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
                             <tr>
-                              <td class="attributes_content" style="background-color: #f4f4f7; font-size: 16px; padding: 16px;" bgcolor="#f4f4f7">
-                                <table style="width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                              <td class="attributes_content" style="background-color: #f4f4f7; font-size: 16px; padding: 16px;">
+                                <table style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
                                   <tr>
                                     <td style="font-size: 16px; color: #51545e;">
                                       <strong>Amount Due:</strong> {{total}}
@@ -99,10 +98,10 @@
                               </td>
                             </tr>
                           </table>
-                          <table align="center" style="margin: 30px auto; text-align: center; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                          <table align="center" style="margin-top: 30px; margin-bottom: 30px; margin-left: auto; margin-right: auto; text-align: center; width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
                             <tr>
                               <td align="center">
-                                <table style="width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                                <table style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
                                   <tr>
                                     <td align="center" style="font-size: 16px;">
                                       <a href="{{action_url}}" class="button" target="_blank" style="display: inline-block; color: #ffffff; text-decoration: none; border-radius: 3px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16); background-color: #22bc66; border-color: #22bc66; border-style: solid; border-width: 10px 18px;">Pay Invoice</a>
@@ -112,7 +111,7 @@
                               </td>
                             </tr>
                           </table>
-                          <table style="padding-top: 35px; padding-bottom: 35px; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                          <table style="padding-top: 35px; padding-bottom: 35px; width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
                             <tr>
                               <td>
                                 <h3 style="font-weight: 700; font-size: 14px; margin-top: 0; text-align: left; color: #333333;">{{invoice_id}}</h3>
@@ -123,7 +122,7 @@
                             </tr>
                             <tr>
                               <td colspan="2">
-                                <table style="padding-top: 25px; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                                <table style="padding-top: 25px; width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
                                   <tr>
                                     <th align="left" style="border-bottom: 1px solid #eaeaec; padding-bottom: 8px;">
                                       <p style="font-size: 12px; line-height: 24px; margin: 0; color: #85878e;">Description</p>
@@ -134,19 +133,19 @@
                                   </tr>
                                   {{#each invoice_details}}
                                     <tr>
-                                      <td style="font-size: 16px; line-height: 18px; padding-top: 10px; padding-bottom: 10px; color: #51545e; width: 80%;" width="80%">
+                                      <td style="font-size: 16px; padding-top: 10px; padding-bottom: 10px; color: #51545e; width: 80%;">
                                         {{description}}
                                       </td>
-                                      <td align="right" style="font-size: 16px; text-align: right; width: 20%;" width="20%">
+                                      <td align="right" style="font-size: 16px; text-align: right; width: 20%;">
                                         {{amount}}
                                       </td>
                                     </tr>
                                   {{/each}}
                                   <tr>
-                                    <td style="padding-top: 16px; font-size: 16px; vertical-align: middle; border-top: 1px solid #eaeaec; width: 80%;" width="80%" valign="middle">
+                                    <td style="font-size: 16px; padding-top: 16px; vertical-align: middle; border-top: 1px solid #eaeaec; width: 80%;" valign="middle">
                                       <p align="right" style="font-weight: 700; font-size: 16px; line-height: 24px; margin: 0; padding-right: 16px; text-align: right; color: #333333;">Total</p>
                                     </td>
-                                    <td style="padding-top: 16px; font-size: 16px; vertical-align: middle; border-top: 1px solid #eaeaec; width: 20%;" width="20%" valign="middle">
+                                    <td style="font-size: 16px; padding-top: 16px; vertical-align: middle; border-top: 1px solid #eaeaec; width: 20%;" valign="middle">
                                       <p align="right" style="font-weight: 700; font-size: 16px; line-height: 24px; margin: 0; text-align: right; color: #333333;">{{total}}</p>
                                     </td>
                                   </tr>
@@ -162,7 +161,7 @@
                             Cheers,
                             <br>The {{ page.company.product }} Team
                           </p>
-                          <table style="margin-top: 25px; padding-top: 25px; border-top: 1px solid #eaeaec;" cellpadding="0" cellspacing="0" role="presentation">
+                          <table style="border-top-width: 1px; margin-top: 25px; padding-top: 25px; border-top-color: #eaeaec; border-top-style: solid;" cellpadding="0" cellspacing="0" role="presentation">
                             <tr>
                               <td>
                                 <p style="font-size: 13px; line-height: 24px; margin-top: 6px; margin-bottom: 20px; color: #51545e;">If you're having trouble with the button above, copy and paste the URL below into your web browser.</p>
@@ -178,7 +177,7 @@
               </tr>
               <tr>
                 <td>
-                  <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; text-align: center; width: 570px;" width="570" cellpadding="0" cellspacing="0" role="presentation">
+                  <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; text-align: center; width: 570px;" cellpadding="0" cellspacing="0" role="presentation">
                     <tr>
                       <td align="center" style="font-size: 16px; padding: 45px;">
                         <p style="font-size: 13px; line-height: 24px; margin-top: 6px; margin-bottom: 20px; text-align: center; color: #a8aaaf;">&copy; 2020 [Product Name]. All rights reserved.</p>
