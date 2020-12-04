@@ -12,12 +12,12 @@
   <if condition="page.googleFonts">
     <link href="https://fonts.googleapis.com/css?family={{ page.googleFonts }}" rel="stylesheet" media="screen">
   </if>
-  <outlook>
+  <!--[if mso]>
     <xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml>
     <style>
       td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
     </style>
-  </outlook>
+  <![endif]-->
   <if condition="page.css">
     <style>{{{ page.css }}}</style>
   </if>
