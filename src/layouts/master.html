@@ -25,9 +25,7 @@
 </head>
 <body class="{{ page.bodyClass || '' }}">
   <if condition="page.preheader">
-    <raw>
-      <div class="hidden">{{ page.preheader }}</div>
-    </raw>
+    <div class="hidden">{{ page.preheader }}</div>
   </if>
   <div role="article" aria-roledescription="email" aria-label="{{ page.title || '' }}" lang="{{ page.language || 'en'}}">
     <block name="template"></block>
