@@ -6,8 +6,6 @@ module.exports = {
     },
     extend: {
       colors: {
-        inherit: 'inherit',
-
         gray: {
           'postmark-lightest': '#F4F4F7',
           'postmark-lighter': '#F2F4F6',
@@ -134,7 +132,6 @@ module.exports = {
       }),
     },
   },
-  variants: {},
   corePlugins: {
     animation: false,
     backgroundOpacity: false,
@@ -143,5 +140,4 @@ module.exports = {
     placeholderOpacity: false,
     textOpacity: false,
   },
-  plugins: [],
 }
