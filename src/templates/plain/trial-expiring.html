@@ -12,9 +12,9 @@
                     <tr>
                       <td class="p-45">
                         <div class="text-base">
-                          <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">Your {{ page.company.product }} trial ends in 3 days</h1>
+                          <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">Your [[ page.company.product ]] trial ends in 3 days</h1>
                           <p class="mt-6 mb-20 text-base leading-24 text-gray-postmark-dark">
-                            Thanks for trying  {{ page.company.product }}. You've added a lot of data, so here are several options for you to consider going forward.
+                            Thanks for trying  [[ page.company.product ]]. You've added a lot of data, so here are several options for you to consider going forward.
                           </p>
                           <table align="center" class="w-full text-center my-30 mx-auto">
                             <tr>
@@ -52,7 +52,7 @@
                                         <strong>
                                           <a href="{{feedback_url}}" class="text-blue-postmark">Share feedback</a>
                                         </strong>
-                                        - If {{ page.company.product }} isn't right for you, let us know what you were looking for and we might be able to suggest some alternatives that might be a better fit.
+                                        - If [[ page.company.product ]] isn't right for you, let us know what you were looking for and we might be able to suggest some alternatives that might be a better fit.
                                       </div>
                                     </td>
                                   </tr>
@@ -62,7 +62,7 @@
                                         <strong>
                                           <a href="{{export_url}}" class="text-blue-postmark">Export your data</a>
                                         </strong>
-                                        - If {{ page.company.product }} wasn't a good fit, you can export your data for use elsewhere.
+                                        - If [[ page.company.product ]] wasn't a good fit, you can export your data for use elsewhere.
                                       </div>
                                     </td>
                                   </tr>
@@ -82,12 +82,12 @@
                             </tr>
                           </table>
                           <p class="mt-6 mb-20 text-base leading-24 text-gray-postmark-dark">
-                            Regardless of your choice, we want to say thank you for trying {{ page.company.product }}.
+                            Regardless of your choice, we want to say thank you for trying [[ page.company.product ]].
                             We know it's an investment of your time, and we appreciate you giving us a chance.
                           </p>
                           <p class="mt-6 mb-20 text-base leading-24 text-gray-postmark-dark">
                             Thanks,
-                            <br>{{ page.company.sender }} and the {{ page.company.product }} Team
+                            <br>[[ page.company.sender ]] and the [[ page.company.product ]] Team
                           </p>
                           <p class="mt-6 mb-20 text-base leading-24 text-gray-postmark-dark">
                             <strong>P.S.</strong> If you have any questions or need any help, please don't hesitate to reach out.

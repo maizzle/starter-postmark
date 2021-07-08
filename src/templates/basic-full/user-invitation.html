@@ -18,7 +18,7 @@ bodyClass: bg-gray-postmark-lighter
                         <div class="text-base">
                           <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">Hi, {{ name }}!</h1>
                           <p class="mt-6 mb-20 text-base leading-24 text-gray-postmark-dark">
-                            {{invite_sender_name}} with {{invite_sender_organization_name}} has invited you to use {{ page.company.product }} to collaborate with them.
+                            {{invite_sender_name}} with {{invite_sender_organization_name}} has invited you to use [[ page.company.product ]] to collaborate with them.
                             Use the button below to set up your account and get started:
                           </p>
                           <table align="center" class="w-full text-center my-30 mx-auto">
@@ -41,7 +41,7 @@ bodyClass: bg-gray-postmark-lighter
                           </p>
                           <p class="mt-6 mb-20 text-base leading-24 text-gray-postmark-dark">
                             Welcome aboard,
-                            <br>The {{ page.company.product }} Team
+                            <br>The [[ page.company.product ]] Team
                           </p>
                           <p class="mt-6 mb-20 text-base leading-24 text-gray-postmark-dark">
                             <strong>P.S.</strong> Need help getting started? Check out our <a href="{{help_url}}" class="text-blue-postmark">help documentation</a>.

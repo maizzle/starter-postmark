@@ -11,8 +11,10 @@
 
 module.exports = {
   build: {
-    tailwind: {
-      css: 'src/assets/css/main.css',
+    posthtml: {
+      expressions: {
+        delimiters: ['[[', ']]']
+      }
     },
     templates: {
       source: 'src/templates',
@@ -30,6 +32,6 @@ module.exports = {
     product: '[Product Name]',
     sender: '[Sender Name]',
   },
-  googleFonts: 'Nunito+Sans:400,700&amp;display=swap',
+  googleFonts: 'family=Nunito+Sans:wght@400;700',
   year: () => new Date().getFullYear(),
 }

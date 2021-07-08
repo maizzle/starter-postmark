@@ -1,24 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="{{ page.language || 'en' }}" xmlns:v="urn:schemas-microsoft-com:vml">
 
   <head>
-    <meta charset="utf-8">
+    <meta charset="{{ page.charset || 'utf-8' }}">
     <meta name="x-apple-disable-message-reformatting">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
     <!--[if mso]>
-    <xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml>
-    <style>
-      td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
-    </style>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings xmlns:o="urn:schemas-microsoft-com:office:office">
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <style>
+    td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
+  </style>
   <![endif]-->
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&amp;amp;display=swap" rel="stylesheet" media="screen">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet" media="screen">
     <style>
       @media (max-width: 600px) {
         .button {
-          text-align: center !important;
           width: 100% !important;
+        }
+
+        .button {
+          text-align: center !important;
         }
       }
 
@@ -32,11 +42,24 @@
         .email-masthead,
         .email-footer {
           background-color: #333333 !important;
+        }
+
+        body,
+        .email-body,
+        .email-body_inner,
+        .email-content,
+        .email-wrapper,
+        .email-masthead,
+        .email-footer {
           color: #ffffff !important;
         }
 
         p,
+        ul,
+        ol,
+        blockquote,
         h1,
+        h2,
         h3 {
           color: #ffffff !important;
         }
@@ -58,33 +81,33 @@
     </style>
   </head>
 
-  <body style="margin: 0; padding: 0; width: 100%; word-break: break-word; -webkit-font-smoothing: antialiased; background-color: #f2f4f6;">
-    <div style="display: none;">This is an invoice for your purchase on undefined. Please submit payment by undefined&#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &zwnj;
+  <body style="margin: 0; width: 100%; padding: 0; word-break: break-word; -webkit-font-smoothing: antialiased;">
+    <div style="display: none;">This is an invoice for your purchase on {{ purchase_date }}. Please submit payment by {{ due_date }}&#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &zwnj;
       &#160;&#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &zwnj;
       &#160;&#847; &#847; &#847; &#847; &#847; </div>
-    <div role="article" aria-roledescription="email" aria-label="" lang="en">
-      <table class="email-wrapper" style="background-color: #f2f4f6; font-family: 'Nunito Sans', -apple-system, 'Segoe UI', sans-serif; width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
+    <div role="article" aria-roledescription="email" aria-label="" lang="{{ page.language || 'en' }}">
+      <table class="email-wrapper" style="width: 100%; background-color: #f2f4f6; font-family: 'Nunito Sans', -apple-system, 'Segoe UI', sans-serif;" cellpadding="0" cellspacing="0" role="presentation">
         <tr>
           <td align="center">
             <table class="email-content" style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
               <tr>
-                <td align="center" class="email-masthead" style="font-size: 16px; padding-top: 25px; padding-bottom: 25px; text-align: center;">
-                  <a href="https://example.com" class="email-masthead_name" style="text-shadow: 0 1px 0 #ffffff; font-weight: 700; font-size: 16px; color: #a8aaaf; text-decoration: none;">
+                <td align="center" class="email-masthead" style="padding-top: 25px; padding-bottom: 25px; text-align: center; font-size: 16px;">
+                  <a href="https://example.com" class="email-masthead_name" style="text-shadow: 0 1px 0 #ffffff; font-size: 16px; font-weight: 700; color: #a8aaaf; text-decoration: none;">
                     [Product Name]
                   </a>
                 </td>
               </tr>
               <tr>
                 <td class="email-body" style="width: 100%;">
-                  <table align="center" class="email-body_inner sm-w-full" style="background-color: #ffffff; margin-left: auto; margin-right: auto; width: 570px;" cellpadding="0" cellspacing="0" role="presentation">
+                  <table align="center" class="email-body_inner sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; background-color: #ffffff;" cellpadding="0" cellspacing="0" role="presentation">
                     <tr>
                       <td style="padding: 45px;">
                         <div style="font-size: 16px;">
-                          <h1 style="font-weight: 700; font-size: 24px; margin-top: 0; text-align: left; color: #333333;">Hi {{name}},</h1>
-                          <p style="font-size: 16px; line-height: 24px; margin-top: 6px; margin-bottom: 20px; color: #51545e;">Thanks for using {{ page.company.product }}. This is an invoice for your recent purchase.</p>
+                          <h1 style="margin-top: 0; text-align: left; font-size: 24px; font-weight: 700; color: #333333;">Hi {{name}},</h1>
+                          <p style="margin-top: 6px; margin-bottom: 20px; font-size: 16px; line-height: 24px; color: #51545e;">Thanks for using [Product Name]. This is an invoice for your recent purchase.</p>
                           <table style="margin-bottom: 21px; width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
                             <tr>
-                              <td class="attributes_content" style="background-color: #f4f4f7; font-size: 16px; padding: 16px;">
+                              <td class="attributes_content" style="background-color: #f4f4f7; padding: 16px; font-size: 16px;">
                                 <table style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
                                   <tr>
                                     <td style="font-size: 16px; color: #51545e;">
@@ -100,7 +123,7 @@
                               </td>
                             </tr>
                           </table>
-                          <table align="center" style="margin-top: 30px; margin-bottom: 30px; margin-left: auto; margin-right: auto; text-align: center; width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
+                          <table align="center" style="margin-left: auto; margin-right: auto; margin-top: 30px; margin-bottom: 30px; width: 100%; text-align: center;" cellpadding="0" cellspacing="0" role="presentation">
                             <tr>
                               <td align="center">
                                 <table style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
@@ -113,61 +136,61 @@
                               </td>
                             </tr>
                           </table>
-                          <table style="padding-top: 35px; padding-bottom: 35px; width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
+                          <table style="width: 100%; padding-top: 35px; padding-bottom: 35px;" cellpadding="0" cellspacing="0" role="presentation">
                             <tr>
                               <td>
-                                <h3 style="font-weight: 700; font-size: 14px; margin-top: 0; text-align: left; color: #333333;">{{invoice_id}}</h3>
+                                <h3 style="margin-top: 0; text-align: left; font-size: 14px; font-weight: 700; color: #333333;">{{invoice_id}}</h3>
                               </td>
                               <td>
-                                <h3 style="font-weight: 700; font-size: 14px; margin-top: 0; text-align: right; color: #333333;">{{date}}</h3>
+                                <h3 style="margin-top: 0; text-align: right; font-size: 14px; font-weight: 700; color: #333333;">{{date}}</h3>
                               </td>
                             </tr>
                             <tr>
                               <td colspan="2">
-                                <table style="padding-top: 25px; width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
+                                <table style="width: 100%; padding-top: 25px;" cellpadding="0" cellspacing="0" role="presentation">
                                   <tr>
                                     <th align="left" style="border-bottom: 1px solid #eaeaec; padding-bottom: 8px;">
-                                      <p style="font-size: 12px; line-height: 24px; margin: 0; color: #85878e;">Description</p>
+                                      <p style="margin: 0; font-size: 12px; line-height: 24px; color: #85878e;">Description</p>
                                     </th>
                                     <th align="right" style="border-bottom: 1px solid #eaeaec; padding-bottom: 8px;">
-                                      <p style="font-size: 12px; line-height: 24px; margin: 0; color: #85878e;">Amount</p>
+                                      <p style="margin: 0; font-size: 12px; line-height: 24px; color: #85878e;">Amount</p>
                                     </th>
                                   </tr>
                                   {{#each invoice_details}}
                                     <tr>
-                                      <td style="font-size: 16px; padding-top: 10px; padding-bottom: 10px; color: #51545e; width: 80%;">
+                                      <td style="width: 80%; padding-top: 10px; padding-bottom: 10px; font-size: 16px; color: #51545e;">
                                         {{description}}
                                       </td>
-                                      <td align="right" style="font-size: 16px; text-align: right; width: 20%;">
+                                      <td align="right" style="width: 20%; text-align: right; font-size: 16px;">
                                         {{amount}}
                                       </td>
                                     </tr>
                                   {{/each}}
                                   <tr>
-                                    <td style="font-size: 16px; padding-top: 16px; vertical-align: middle; border-top: 1px solid #eaeaec; width: 80%;" valign="middle">
-                                      <p align="right" style="font-weight: 700; font-size: 16px; line-height: 24px; margin: 0; padding-right: 16px; text-align: right; color: #333333;">Total</p>
+                                    <td style="padding-top: 16px; vertical-align: middle; font-size: 16px; border-top: 1px solid #eaeaec; width: 80%;" valign="middle">
+                                      <p align="right" style="margin: 0; padding-right: 16px; text-align: right; font-size: 16px; font-weight: 700; line-height: 24px; color: #333333;">Total</p>
                                     </td>
-                                    <td style="font-size: 16px; padding-top: 16px; vertical-align: middle; border-top: 1px solid #eaeaec; width: 20%;" valign="middle">
-                                      <p align="right" style="font-weight: 700; font-size: 16px; line-height: 24px; margin: 0; text-align: right; color: #333333;">{{total}}</p>
+                                    <td style="padding-top: 16px; vertical-align: middle; font-size: 16px; border-top: 1px solid #eaeaec; width: 20%;" valign="middle">
+                                      <p align="right" style="margin: 0; text-align: right; font-size: 16px; font-weight: 700; line-height: 24px; color: #333333;">{{total}}</p>
                                     </td>
                                   </tr>
                                 </table>
                               </td>
                             </tr>
                           </table>
-                          <p style="font-size: 16px; line-height: 24px; margin-top: 6px; margin-bottom: 20px; color: #51545e;">
+                          <p style="margin-top: 6px; margin-bottom: 20px; font-size: 16px; line-height: 24px; color: #51545e;">
                             If you have any questions about this invoice, simply reply to this email or reach out to our
                             <a href="{{support_url}}" style="color: #3869d4;">support team</a> for help.
                           </p>
-                          <p style="font-size: 16px; line-height: 24px; margin-top: 6px; margin-bottom: 20px; color: #51545e;">
+                          <p style="margin-top: 6px; margin-bottom: 20px; font-size: 16px; line-height: 24px; color: #51545e;">
                             Cheers,
-                            <br>The {{ page.company.product }} Team
+                            <br>The [Product Name] Team
                           </p>
-                          <table style="border-top-width: 1px; margin-top: 25px; padding-top: 25px; border-top-color: #eaeaec; border-top-style: solid;" cellpadding="0" cellspacing="0" role="presentation">
+                          <table style="margin-top: 25px; border-top-width: 1px; padding-top: 25px; border-top-color: #eaeaec; border-top-style: solid;" cellpadding="0" cellspacing="0" role="presentation">
                             <tr>
                               <td>
-                                <p style="font-size: 13px; line-height: 24px; margin-top: 6px; margin-bottom: 20px; color: #51545e;">If you're having trouble with the button above, copy and paste the URL below into your web browser.</p>
-                                <p style="font-size: 13px; line-height: 24px; margin-top: 6px; margin-bottom: 20px; color: #51545e;">{{action_url}}</p>
+                                <p style="margin-top: 6px; margin-bottom: 20px; font-size: 13px; line-height: 24px; color: #51545e;">If you're having trouble with the button above, copy and paste the URL below into your web browser.</p>
+                                <p style="margin-top: 6px; margin-bottom: 20px; font-size: 13px; line-height: 24px; color: #51545e;">{{action_url}}</p>
                               </td>
                             </tr>
                           </table>
@@ -179,11 +202,11 @@
               </tr>
               <tr>
                 <td>
-                  <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; text-align: center; width: 570px;" cellpadding="0" cellspacing="0" role="presentation">
+                  <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; text-align: center;" cellpadding="0" cellspacing="0" role="presentation">
                     <tr>
-                      <td align="center" style="font-size: 16px; padding: 45px;">
-                        <p style="font-size: 13px; line-height: 24px; margin-top: 6px; margin-bottom: 20px; text-align: center; color: #a8aaaf;">&copy; 2021 [Product Name]. All rights reserved.</p>
-                        <p style="font-size: 13px; line-height: 24px; margin-top: 6px; margin-bottom: 20px; text-align: center; color: #a8aaaf;">
+                      <td align="center" style="padding: 45px; font-size: 16px;">
+                        <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 13px; line-height: 24px; color: #a8aaaf;">&copy; 2021 [Product Name]. All rights reserved.</p>
+                        <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 13px; line-height: 24px; color: #a8aaaf;">
                           [Company Name, LLC]
                           <br>1234 Street Rd.
                           <br>Suite 1234

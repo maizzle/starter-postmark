@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   theme: {
     screens: {
       sm: {max: '600px'},
@@ -87,9 +88,15 @@ module.exports = {
         '11/12': '91.666667%',
       },
       borderRadius: {
+        none: '0px',
         sm: '2px',
         DEFAULT: '4px',
+        md: '6px',
         lg: '8px',
+        xl: '12px',
+        '2xl': '16px',
+        '3xl': '24px',
+        full: '9999px',
       },
       fontFamily: {
         sans: ['"Nunito Sans"', '-apple-system', '"Segoe UI"', 'sans-serif'],
@@ -108,6 +115,10 @@ module.exports = {
         '3xl': '30px',
         '4xl': '36px',
         '5xl': '48px',
+        '6xl': '60px',
+        '7xl': '72px',
+        '8xl': '96px',
+        '9xl': '128px',
       },
       inset: theme => ({
         ...theme('spacing'),
@@ -123,6 +134,17 @@ module.exports = {
       }),
       maxWidth: theme => ({
         ...theme('spacing'),
+        xs: '160px',
+        sm: '192px',
+        md: '224px',
+        lg: '256px',
+        xl: '288px',
+        '2xl': '336px',
+        '3xl': '384px',
+        '4xl': '448px',
+        '5xl': '512px',
+        '6xl': '576px',
+        '7xl': '640px',
       }),
       minHeight: theme => ({
         ...theme('spacing'),
