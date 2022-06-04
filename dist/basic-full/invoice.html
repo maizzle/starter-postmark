@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="{{ page.language || 'en' }}" xmlns:v="urn:schemas-microsoft-com:vml">
-
-  <head>
-    <meta charset="{{ page.charset || 'utf-8' }}">
-    <meta name="x-apple-disable-message-reformatting">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
-    <!--[if mso]>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <meta charset="utf-8">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <!--[if mso]>
   <noscript>
     <xml>
       <o:OfficeDocumentSettings xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -19,208 +20,183 @@
     td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
   </style>
   <![endif]-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet" media="screen">
-    <style>
-      @media (max-width: 600px) {
-        .button {
-          width: 100% !important;
-        }
-
-        .button {
-          text-align: center !important;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet" media="screen">
+  <style>
+    @media (prefers-color-scheme: dark) {
+      body,
+      .email-body,
+      .email-body_inner,
+      .email-content,
+      .email-wrapper,
+      .email-masthead,
+      .email-footer {
+        background-color: #333333 !important;
+        color: #fff !important;
       }
-
-      @media (prefers-color-scheme: dark) {
-
-        body,
-        .email-body,
-        .email-body_inner,
-        .email-content,
-        .email-wrapper,
-        .email-masthead,
-        .email-footer {
-          background-color: #333333 !important;
-        }
-
-        body,
-        .email-body,
-        .email-body_inner,
-        .email-content,
-        .email-wrapper,
-        .email-masthead,
-        .email-footer {
-          color: #ffffff !important;
-        }
-
-        p,
-        ul,
-        ol,
-        blockquote,
-        h1,
-        h2,
-        h3 {
-          color: #ffffff !important;
-        }
-
-        .attributes_content {
-          background-color: #222222 !important;
-        }
-
-        .email-masthead_name {
-          text-shadow: none !important;
-        }
+      p,
+      ul,
+      ol,
+      blockquote,
+      h1,
+      h2,
+      h3 {
+        color: #fff !important;
       }
-
-      @media (max-width: 600px) {
-        .sm-w-full {
-          width: 100% !important;
-        }
+      .attributes_content {
+        background-color: #222222 !important;
       }
-    </style>
-  </head>
-
-  <body style="margin: 0; width: 100%; padding: 0; word-break: break-word; -webkit-font-smoothing: antialiased;">
-    <div style="display: none;">This is an invoice for your purchase on {{ purchase_date }}. Please submit payment by {{ due_date }}&#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &zwnj;
-      &#160;&#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &zwnj;
-      &#160;&#847; &#847; &#847; &#847; &#847; </div>
-    <div role="article" aria-roledescription="email" aria-label="" lang="{{ page.language || 'en' }}">
-      <table class="email-wrapper" style="width: 100%; background-color: #f2f4f6; font-family: 'Nunito Sans', -apple-system, 'Segoe UI', sans-serif;" cellpadding="0" cellspacing="0" role="presentation">
-        <tr>
-          <td align="center">
-            <table class="email-content" style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
-              <tr>
-                <td align="center" class="email-masthead" style="padding-top: 25px; padding-bottom: 25px; text-align: center; font-size: 16px;">
-                  <a href="https://example.com" class="email-masthead_name" style="text-shadow: 0 1px 0 #ffffff; font-size: 16px; font-weight: 700; color: #a8aaaf; text-decoration: none;">
-                    [Product Name]
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td class="email-body" style="width: 100%; background-color: #ffffff;">
-                  <table align="center" class="email-body_inner sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; background-color: #ffffff;" cellpadding="0" cellspacing="0" role="presentation">
-                    <tr>
-                      <td style="padding: 45px;">
-                        <div style="font-size: 16px;">
-                          <h1 style="margin-top: 0; text-align: left; font-size: 24px; font-weight: 700; color: #333333;">Hi {{name}},</h1>
-                          <p style="margin-top: 6px; margin-bottom: 20px; font-size: 16px; line-height: 24px; color: #51545e;">Thanks for using [Product Name]. This is an invoice for your recent purchase.</p>
-                          <table style="margin-bottom: 21px; width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
-                            <tr>
-                              <td class="attributes_content" style="background-color: #f4f4f7; padding: 16px; font-size: 16px;">
-                                <table style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
+      .email-masthead_name {
+        text-shadow: none !important;
+      }
+    }
+    @media (max-width: 600px) {
+      .sm-w-full {
+        width: 100% !important;
+      }
+    }
+  </style>
+</head>
+<body class="page_bodyClass" style="word-break: break-word; -webkit-font-smoothing: antialiased; margin: 0; width: 100%; padding: 0">
+  <div style="display: none">
+    This is an invoice for your purchase on {{ purchase_date }}. Please submit payment by {{ due_date }}
+    &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;
+  </div>
+  <div role="article" aria-roledescription="email" aria-label="" lang="en">
+    <table class="email-wrapper" style="width: 100%; background-color: #F2F4F6; font-family: 'Nunito Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td align="center">
+          <table class="email-content" style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+            <tr>
+              <td align="center" class="email-masthead" style="padding-top: 25px; padding-bottom: 25px; text-align: center; font-size: 16px">
+                <a href="https://example.com" class="email-masthead_name" style="text-decoration: none; text-shadow: 0 1px 0 #FFFFFF; font-size: 16px; font-weight: 700; color: #A8AAAF">
+                  [Product Name]
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="email-body" style="width: 100%; background-color: #fff">
+                <table align="center" class="email-body_inner sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; background-color: #fff" cellpadding="0" cellspacing="0" role="presentation">
+                  <tr>
+                    <td style="padding: 45px">
+                      <div style="font-size: 16px">
+                        <h1 style="margin-top: 0; text-align: left; font-size: 24px; font-weight: 700; color: #333333">Hi {{name}},</h1>
+                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">Thanks for using [Product Name]. This is an invoice for your recent purchase.</p>
+                        <table style="margin-bottom: 21px; width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                          <tr>
+                            <td class="attributes_content" style="background-color: #F4F4F7; padding: 16px; font-size: 16px">
+                              <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                  <td style="font-size: 16px; color: #51545E">
+                                    <strong>Amount Due:</strong> {{total}}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="font-size: 16px; color: #51545E">
+                                    <strong>Due By:</strong> {{due_date}}
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <table align="center" style="margin: 30px auto; width: 100%; text-align: center" cellpadding="0" cellspacing="0" role="presentation">
+                          <tr>
+                            <td align="center">
+                              <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                  <td align="center" style="font-size: 16px">
+                                    <a href="{{action_url}}" target="_blank" style="display: inline-block; color: #fff; text-decoration-line: none; border-radius: 3px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16); background-color: #22BC66; border-color: #22bc66; border-style: solid; border-width: 10px 18px">Pay Invoice</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <table style="width: 100%; padding-top: 35px; padding-bottom: 35px" cellpadding="0" cellspacing="0" role="presentation">
+                          <tr>
+                            <td>
+                              <h3 style="margin-top: 0; text-align: left; font-size: 14px; font-weight: 700; color: #333333">{{invoice_id}}</h3>
+                            </td>
+                            <td>
+                              <h3 style="margin-top: 0; text-align: right; font-size: 14px; font-weight: 700; color: #333333">{{date}}</h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">
+                              <table style="width: 100%; padding-top: 25px" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                  <th align="left" style="border-bottom: 1px solid #eaeaec; padding-bottom: 8px">
+                                    <p style="margin: 0; font-size: 12px; line-height: 24px; color: #85878E">Description</p>
+                                  </th>
+                                  <th align="right" style="border-bottom: 1px solid #eaeaec; padding-bottom: 8px">
+                                    <p style="margin: 0; font-size: 12px; line-height: 24px; color: #85878E">Amount</p>
+                                  </th>
+                                </tr>
+                                {{#each invoice_details}}
                                   <tr>
-                                    <td style="font-size: 16px; color: #51545e;">
-                                      <strong>Amount Due:</strong> {{total}}
+                                    <td style="width: 80%; padding-top: 10px; padding-bottom: 10px; font-size: 16px; line-height: 18px; color: #51545E">
+                                      {{description}}
+                                    </td>
+                                    <td align="right" style="width: 20%; text-align: right; font-size: 16px">
+                                      {{amount}}
                                     </td>
                                   </tr>
-                                  <tr>
-                                    <td style="font-size: 16px; color: #51545e;">
-                                      <strong>Due By:</strong> {{due_date}}
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                          <table align="center" style="margin-left: auto; margin-right: auto; margin-top: 30px; margin-bottom: 30px; width: 100%; text-align: center;" cellpadding="0" cellspacing="0" role="presentation">
-                            <tr>
-                              <td align="center">
-                                <table style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
-                                  <tr>
-                                    <td align="center" style="font-size: 16px;">
-                                      <a href="{{action_url}}" class="button" target="_blank" style="display: inline-block; color: #ffffff; text-decoration: none; border-radius: 3px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16); background-color: #22bc66; border-color: #22bc66; border-style: solid; border-width: 10px 18px;">Pay Invoice</a>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                          <table style="width: 100%; padding-top: 35px; padding-bottom: 35px;" cellpadding="0" cellspacing="0" role="presentation">
-                            <tr>
-                              <td>
-                                <h3 style="margin-top: 0; text-align: left; font-size: 14px; font-weight: 700; color: #333333;">{{invoice_id}}</h3>
-                              </td>
-                              <td>
-                                <h3 style="margin-top: 0; text-align: right; font-size: 14px; font-weight: 700; color: #333333;">{{date}}</h3>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td colspan="2">
-                                <table style="width: 100%; padding-top: 25px;" cellpadding="0" cellspacing="0" role="presentation">
-                                  <tr>
-                                    <th align="left" style="border-bottom: 1px solid #eaeaec; padding-bottom: 8px;">
-                                      <p style="margin: 0; font-size: 12px; line-height: 24px; color: #85878e;">Description</p>
-                                    </th>
-                                    <th align="right" style="border-bottom: 1px solid #eaeaec; padding-bottom: 8px;">
-                                      <p style="margin: 0; font-size: 12px; line-height: 24px; color: #85878e;">Amount</p>
-                                    </th>
-                                  </tr>
-                                  {{#each invoice_details}}
-                                    <tr>
-                                      <td style="width: 80%; padding-top: 10px; padding-bottom: 10px; font-size: 16px; color: #51545e;">
-                                        {{description}}
-                                      </td>
-                                      <td align="right" style="width: 20%; text-align: right; font-size: 16px;">
-                                        {{amount}}
-                                      </td>
-                                    </tr>
-                                  {{/each}}
-                                  <tr>
-                                    <td style="padding-top: 16px; vertical-align: middle; font-size: 16px; border-top: 1px solid #eaeaec; width: 80%;" valign="middle">
-                                      <p align="right" style="margin: 0; padding-right: 16px; text-align: right; font-size: 16px; font-weight: 700; line-height: 24px; color: #333333;">Total</p>
-                                    </td>
-                                    <td style="padding-top: 16px; vertical-align: middle; font-size: 16px; border-top: 1px solid #eaeaec; width: 20%;" valign="middle">
-                                      <p align="right" style="margin: 0; text-align: right; font-size: 16px; font-weight: 700; line-height: 24px; color: #333333;">{{total}}</p>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                          <p style="margin-top: 6px; margin-bottom: 20px; font-size: 16px; line-height: 24px; color: #51545e;">
-                            If you have any questions about this invoice, simply reply to this email or reach out to our
-                            <a href="{{support_url}}" style="color: #3869d4;">support team</a> for help.
-                          </p>
-                          <p style="margin-top: 6px; margin-bottom: 20px; font-size: 16px; line-height: 24px; color: #51545e;">
-                            Cheers,
-                            <br>The [Product Name] Team
-                          </p>
-                          <table style="margin-top: 25px; border-top-width: 1px; padding-top: 25px; border-top-color: #eaeaec; border-top-style: solid;" cellpadding="0" cellspacing="0" role="presentation">
-                            <tr>
-                              <td>
-                                <p style="margin-top: 6px; margin-bottom: 20px; font-size: 13px; line-height: 24px; color: #51545e;">If you're having trouble with the button above, copy and paste the URL below into your web browser.</p>
-                                <p style="margin-top: 6px; margin-bottom: 20px; font-size: 13px; line-height: 24px; color: #51545e;">{{action_url}}</p>
-                              </td>
-                            </tr>
-                          </table>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; text-align: center;" cellpadding="0" cellspacing="0" role="presentation">
-                    <tr>
-                      <td align="center" style="padding: 45px; font-size: 16px;">
-                        <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 13px; line-height: 24px; color: #a8aaaf;">&copy; 2021 [Product Name]. All rights reserved.</p>
-                        <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 13px; line-height: 24px; color: #a8aaaf;">
-                          [Company Name, LLC]
-                          <br>1234 Street Rd.
-                          <br>Suite 1234
+                                {{/each}}
+                                <tr>
+                                  <td style="padding-top: 16px; vertical-align: middle; font-size: 16px; border-top: 1px solid #eaeaec; width: 80%" valign="middle">
+                                    <p align="right" style="margin: 0; padding-right: 16px; text-align: right; font-size: 16px; font-weight: 700; line-height: 24px; color: #333333">Total</p>
+                                  </td>
+                                  <td style="padding-top: 16px; vertical-align: middle; font-size: 16px; border-top: 1px solid #eaeaec; width: 20%" valign="middle">
+                                    <p align="right" style="margin: 0; text-align: right; font-size: 16px; font-weight: 700; line-height: 24px; color: #333333">{{total}}</p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">
+                          If you have any questions about this invoice, simply reply to this email or reach out to our
+                          <a href="{{support_url}}" style="color: #3869D4">support team</a> for help.
                         </p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </body>
-
+                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">
+                          Cheers,
+                          <br>The [Product Name] Team
+                        </p>
+                        <table style="margin-top: 25px; padding-top: 25px; border-top: 1px solid #eaeaec" cellpadding="0" cellspacing="0" role="presentation">
+                          <tr>
+                            <td>
+                              <p style="margin-top: 6px; margin-bottom: 5px; font-size: 12px; line-height: 24px; color: #51545E">If you're having trouble with the button above, copy and paste the URL below into your web browser.</p>
+                              <p style="margin-top: 6px; margin-bottom: 5px; font-size: 12px; line-height: 24px; color: #51545E">{{action_url}}</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; text-align: center" cellpadding="0" cellspacing="0" role="presentation">
+                  <tr>
+                    <td align="center" style="padding: 45px; font-size: 16px">
+                      <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">&copy; 2022 [Product Name]. All rights reserved.</p>
+                      <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
+                        [Company Name, LLC] <br>1234 Street Rd.
+                        <br>Suite 1234
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
 </html>

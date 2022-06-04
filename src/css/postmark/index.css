@@ -7,19 +7,19 @@
 }
 
 .purchase_heading p {
-  @apply text-xxs leading-24 m-0;
+  @apply text-xs leading-6 m-0;
   color: #85878E;
 }
 
 .purchase_footer {
-  @apply pt-16 text-base align-middle;
+  @apply pt-4 text-base align-middle;
   border-top-width: 1px;
   border-top-color: #EAEAEC;
   border-top-style: solid;
 }
 
 .body-sub {
-  @apply mt-25 pt-25 border-t;
+  @apply mt-[25px] pt-[25px] border-t;
   border-top-color: #EAEAEC;
   border-top-style: solid;
 }

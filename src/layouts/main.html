@@ -1,11 +1,13 @@
-<!DOCTYPE {{{ page.doctype || 'html' }}}>
-<html lang="{{ page.language || 'en' }}" xmlns:v="urn:schemas-microsoft-com:vml">
+<!DOCTYPE [[[ page.doctype || 'html' ]]]>
+<html lang="[[ page.language || 'en' ]]" xmlns:v="urn:schemas-microsoft-com:vml">
 <head>
-  <meta charset="{{ page.charset || 'utf-8' }}">
+  <meta charset="[[ page.charset || 'utf-8' ]]">
   <meta name="x-apple-disable-message-reformatting">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
   <!--[if mso]>
   <noscript>
     <xml>
@@ -19,24 +21,24 @@
   </style>
   <![endif]-->
   <if condition="page.title">
-    <title>{{{ page.title }}}</title>
+    <title>[[[ page.title ]]]</title>
   </if>
-  <if condition="page.googleFonts">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?{{{ page.googleFonts }}}&display=swap" rel="stylesheet" media="screen">
-  </if>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet" media="screen">
   <if condition="page.css">
-    <style>{{{ page.css }}}</style>
+    <style>[[[ page.css ]]]</style>
   </if>
   <block name="head"></block>
 </head>
-<body class="{{ page.bodyClass }}">
+<body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}">
   <if condition="page.preheader">
-    <div class="hidden">{{{ page.preheader }}}&#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &zwnj;
-      &#160;&#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &zwnj;
-      &#160;&#847; &#847; &#847; &#847; &#847; </div>
+    <div class="hidden">
+      [[[ page.preheader ]]]
+      <each loop="item in Array.from(Array(150))">&#847; </each>
+    </div>
   </if>
-  <div role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en' }}">
+  <div role="article" aria-roledescription="email" aria-label="[[[ page.title || '' ]]]" lang="[[ page.language || 'en' ]]">
     <block name="template"></block>
   </div>
 </body>

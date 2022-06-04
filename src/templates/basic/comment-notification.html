@@ -11,16 +11,16 @@ bodyClass: bg-gray-postmark-lighter
             <component src="src/components/header.html"></component>
               <tr>
                 <td class="email-body w-full">
-                  <table align="center" class="email-body_inner w-570 bg-white mx-auto sm:w-full">
+                  <table align="center" class="email-body_inner w-[570px] bg-white mx-auto sm:w-full">
                     <tr>
-                      <td class="p-45">
+                      <td class="p-[45px]">
                         <div class="text-base">
                           {{body}}
                           <br>
                           <br> {{#attachment_details}}
-                          <table class="w-full mb-21">
+                          <table class="w-full mb-[21px]">
                             <tr>
-                              <td class="attributes_content p-16 text-base bg-gray-postmark-lightest">
+                              <td class="attributes_content p-4 text-base bg-gray-postmark-lightest">
                                 <table class="w-full">
                                   {{#each . }}
                                   <tr>
@@ -35,8 +35,8 @@ bodyClass: bg-gray-postmark-lighter
                             </tr>
                           </table>
                           {{/attachment_details}}
-                          <p class="mt-6 mb-20 text-base leading-24 text-gray-postmark-dark">By {{commenter_name}} at {{timestamp}}</p>
-                          <p class="mt-6 mb-20 text-xs leading-24 text-gray-postmark-dark">
+                          <p class="mt-1.5 mb-[5px] text-base leading-6 text-gray-postmark-dark">By {{commenter_name}} at {{timestamp}}</p>
+                          <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">
                             <a href="{{action_url}}" class="text-blue-postmark">View the comment</a> or <a href="{{notifications_url}}" class="text-blue-postmark">Manage notifications</a>
                           </p>
                         </div>
