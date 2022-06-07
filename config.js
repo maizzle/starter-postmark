@@ -4,8 +4,8 @@
 |-------------------------------------------------------------------------------
 |
 | The exported object contains the default Maizzle settings for development.
-| This is used when you run the `maizzle build` or `maizzle serve` and it
-| has the fastest build time, since most transformations are disabled.
+| This is used when you run `maizzle build` or `maizzle serve` and it has
+| the fastest build time, since most transformations are disabled.
 |
 */
 
@@ -13,7 +13,8 @@ module.exports = {
   build: {
     posthtml: {
       expressions: {
-        delimiters: ['[[', ']]']
+        delimiters: ['[[', ']]'],
+        unescapeDelimiters: ['[[[', ']]]'],
       }
     },
     templates: {
@@ -32,6 +33,5 @@ module.exports = {
     product: '[Product Name]',
     sender: '[Sender Name]',
   },
-  googleFonts: 'family=Nunito+Sans:wght@400;700',
   year: () => new Date().getFullYear(),
 }

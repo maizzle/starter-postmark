@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="{{ page.language || 'en' }}" xmlns:v="urn:schemas-microsoft-com:vml">
-
-  <head>
-    <meta charset="{{ page.charset || 'utf-8' }}">
-    <meta name="x-apple-disable-message-reformatting">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
-    <!--[if mso]>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <meta charset="utf-8">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <!--[if mso]>
   <noscript>
     <xml>
       <o:OfficeDocumentSettings xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -19,124 +20,114 @@
     td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
   </style>
   <![endif]-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet" media="screen">
-    <style>
-      @media (prefers-color-scheme: dark) {
-
-        body,
-        .email-body,
-        .email-body_inner,
-        .email-content,
-        .email-wrapper,
-        .email-masthead,
-        .email-footer {
-          background-color: #333333 !important;
-        }
-
-        body,
-        .email-body,
-        .email-body_inner,
-        .email-content,
-        .email-wrapper,
-        .email-masthead,
-        .email-footer {
-          color: #ffffff !important;
-        }
-
-        p,
-        ul,
-        ol,
-        blockquote,
-        h1,
-        h2,
-        h3 {
-          color: #ffffff !important;
-        }
-
-        .attributes_content {
-          background-color: #222222 !important;
-        }
-
-        .email-masthead_name {
-          text-shadow: none !important;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet" media="screen">
+  <style>
+    .body-sub {
+      margin-top: 25px;
+      border-top-width: 1px;
+      padding-top: 25px;
+      border-top-color: #EAEAEC;
+      border-top-style: solid;
+    }
+    @media (prefers-color-scheme: dark) {
+      body,
+      .email-body,
+      .email-body_inner,
+      .email-content,
+      .email-wrapper,
+      .email-masthead,
+      .email-footer {
+        background-color: #333333 !important;
+        color: #fff !important;
       }
-
-      @media (max-width: 600px) {
-        .sm-w-full {
-          width: 100% !important;
-        }
+      p,
+      ul,
+      ol,
+      blockquote,
+      h1,
+      h2,
+      h3 {
+        color: #fff !important;
       }
-    </style>
-  </head>
-
-  <body style="margin: 0; width: 100%; padding: 0; word-break: break-word; -webkit-font-smoothing: antialiased;">
-    <div role="article" aria-roledescription="email" aria-label="" lang="{{ page.language || 'en' }}">
-      <table class="email-wrapper" style="width: 100%; background-color: #f2f4f6; font-family: 'Nunito Sans', -apple-system, 'Segoe UI', sans-serif;" cellpadding="0" cellspacing="0" role="presentation">
-        <tr>
-          <td align="center">
-            <table class="email-content" style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
-              <tr>
-                <td align="center" class="email-masthead" style="padding-top: 25px; padding-bottom: 25px; text-align: center; font-size: 16px;">
-                  <a href="https://example.com" class="email-masthead_name" style="text-shadow: 0 1px 0 #ffffff; font-size: 16px; font-weight: 700; color: #a8aaaf; text-decoration: none;">
-                    [Product Name]
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td class="email-body" style="width: 100%; background-color: #ffffff;">
-                  <table align="center" class="email-body_inner sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; background-color: #ffffff;" cellpadding="0" cellspacing="0" role="presentation">
-                    <tr>
-                      <td style="padding: 45px;">
-                        <div style="font-size: 16px;">
-
-                          {{body}}
-                          <br>
-                          <br> {{#attachment_details}}
-                            <table style="margin-bottom: 21px; width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
-                              <tr>
-                                <td class="attributes_content" style="background-color: #f4f4f7; padding: 16px; font-size: 16px;">
-                                  <table style="width: 100%;" cellpadding="0" cellspacing="0" role="presentation">
-                                    {{#each . }}
-                                      <tr>
-                                        <td style="font-size: 16px;"><a href="{{attachment_url}}" style="color: #3869d4;">{{attachment_name}}</a> <span>({{attachment_size}} {{attachment_type}})</span></td>
-                                      </tr>
-                                    {{/each}}
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          {{/attachment_details}}
-                          <p style="margin-top: 6px; margin-bottom: 20px; font-size: 16px; line-height: 24px; color: #51545e;">By {{commenter_name}} at {{timestamp}}</p>
-                          <p style="margin-top: 6px; margin-bottom: 20px; font-size: 13px; line-height: 24px; color: #51545e;"><a href="{{action_url}}" style="color: #3869d4;">View the comment</a> or <a href="{{notifications_url}}" style="color: #3869d4;">Manage notifications</a></p>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; text-align: center;" cellpadding="0" cellspacing="0" role="presentation">
-                    <tr>
-                      <td align="center" style="padding: 45px; font-size: 16px;">
-                        <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 13px; line-height: 24px; color: #a8aaaf;">&copy; 2021 [Product Name]. All rights reserved.</p>
-                        <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 13px; line-height: 24px; color: #a8aaaf;">
-                          [Company Name, LLC]
-                          <br>1234 Street Rd.
-                          <br>Suite 1234
-                        </p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </body>
-
+      .attributes_content {
+        background-color: #222222 !important;
+      }
+      .email-masthead_name {
+        text-shadow: none !important;
+      }
+    }
+    @media (max-width: 600px) {
+      .sm-w-full {
+        width: 100% !important;
+      }
+    }
+  </style>
+</head>
+<body class="page_bodyClass" style="word-break: break-word; -webkit-font-smoothing: antialiased; margin: 0; width: 100%; padding: 0">
+  <div role="article" aria-roledescription="email" aria-label="" lang="en">
+    <table class="email-wrapper" style="width: 100%; background-color: #F2F4F6; font-family: 'Nunito Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td align="center">
+          <table class="email-content" style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+            <tr>
+              <td align="center" class="email-masthead" style="padding-top: 25px; padding-bottom: 25px; text-align: center; font-size: 16px">
+                <a href="https://example.com" class="email-masthead_name" style="text-decoration: none; text-shadow: 0 1px 0 #FFFFFF; font-size: 16px; font-weight: 700; color: #A8AAAF">
+                  [Product Name]
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="email-body" style="width: 100%; background-color: #fff">
+                <table align="center" class="email-body_inner sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; background-color: #fff" cellpadding="0" cellspacing="0" role="presentation">
+                  <tr>
+                    <td style="padding: 45px">
+                      <div style="font-size: 16px">
+                        {{body}}
+                        <br>
+                        <br> {{#attachment_details}}
+                          <table style="margin-bottom: 21px; width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                            <tr>
+                              <td class="attributes_content" style="background-color: #F4F4F7; padding: 16px; font-size: 16px">
+                                <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                                  {{#each . }}
+                                    <tr>
+                                      <td style="font-size: 16px"><a href="{{attachment_url}}" style="color: #3869D4">{{attachment_name}}</a> <span>({{attachment_size}} {{attachment_type}})</span></td>
+                                    </tr>
+                                  {{/each}}
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        {{/attachment_details}}
+                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">By {{commenter_name}} at {{timestamp}}</p>
+                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 12px; line-height: 24px; color: #51545E"><a href="{{action_url}}" style="color: #3869D4">View the comment</a> or <a href="{{notifications_url}}" style="color: #3869D4">Manage notifications</a></p>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; text-align: center" cellpadding="0" cellspacing="0" role="presentation">
+                  <tr>
+                    <td align="center" style="padding: 45px; font-size: 16px">
+                      <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">&copy; 2022 [Product Name]. All rights reserved.</p>
+                      <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
+                        [Company Name, LLC] <br>1234 Street Rd.
+                        <br>Suite 1234
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
 </html>
