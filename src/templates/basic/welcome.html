@@ -15,9 +15,12 @@ bodyClass: bg-gray-postmark-lighter
                   <tr>
                     <td class="p-[45px]">
                       <div class="text-base">
-                        <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">Welcome, {{ name }}!</h1>
+                        <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">
+                          Welcome, {{ name }}!
+                        </h1>
                         <p class="mt-1.5 mb-[5px] text-base leading-6 text-gray-postmark-dark">
-                          Thanks for trying [[ page.company.product ]]. We're thrilled to have you on board. To get the most out of [[ page.company.product ]], do this primary next step:
+                          Thanks for trying [[ page.company.product ]]. We're thrilled to have you on board.
+                          To get the most out of [[ page.company.product ]], do this primary next step:
                         </p>
                         <table align="center" class="w-full text-center my-7.5 mx-auto">
                           <tr>
@@ -25,7 +28,7 @@ bodyClass: bg-gray-postmark-lighter
                               <table class="w-full">
                                 <tr>
                                   <td align="center" class="text-base">
-                                    <a href="{{action_url}}" class="button button--blue" target="_blank">Do this Next</a>
+                                    <a href="{{action_url}}" class="button button--blue">Do this Next</a>
                                   </td>
                                 </tr>
                               </table>
@@ -75,22 +78,29 @@ bodyClass: bg-gray-postmark-lighter
                             </tr>
                           </table>
                         <p class="mt-1.5 mb-[5px] text-base leading-6 text-gray-postmark-dark">
-                          If you have any questions, feel free to <a href="mailto:{{support_email}}" class="text-blue-postmark">email our customer success team</a>.
-                          (We're lightning quick at replying.) We also offer <a href="{{live_chat_url}}" class="text-blue-postmark">live chat</a> during business hours.
+                          If you have any questions, feel free to
+                          <a href="mailto:{{support_email}}" class="text-blue-postmark">email our customer success team</a>.
+                          (We're lightning quick at replying.)
+                          We also offer <a href="{{live_chat_url}}" class="text-blue-postmark">live chat</a> during business hours.
                         </p>
                         <p class="mt-1.5 mb-[5px] text-base leading-6 text-gray-postmark-dark">
                           Thanks,
                           <br>[[ page.company.sender ]] and the [[ page.company.product ]] Team
                         </p>
                         <p class="mt-1.5 mb-[5px] text-base leading-6 text-gray-postmark-dark">
-                          <strong>P.S.</strong> Need immediate help getting started? Check out our <a href="{{help_url}}" class="text-blue-postmark">help documentation</a>.
+                          <strong>P.S.</strong> Need immediate help getting started?
+                          Check out our <a href="{{help_url}}" class="text-blue-postmark">help documentation</a>.
                           Or, just reply to this email, the [[ page.company.product ]] support team is always ready to help!
                         </p>
                         <table class="body-sub">
                           <tr>
                             <td>
-                              <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">If you're having trouble with the button above, copy and paste the URL below into your web browser.</p>
-                              <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">{{action_url}}</p>
+                              <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">
+                                If you're having trouble with the button above, copy and paste the URL below into your web browser.
+                              </p>
+                              <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">
+                                {{action_url}}
+                              </p>
                             </td>
                           </tr>
                         </table>

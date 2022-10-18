@@ -16,24 +16,31 @@ bodyClass: bg-gray-postmark-lighter
                     <tr>
                       <td class="p-[45px]">
                         <div class="text-base">
-                          <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">Hi {{name}},</h1>
+                          <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">
+                            Hi {{name}},
+                          </h1>
                           <p class="mt-1.5 mb-[5px] text-base leading-6 text-gray-postmark-dark">
                             Thanks for using  [[ page.company.product ]]. This email is the receipt for your purchase. No payment is due.
                           </p>
                           <p class="mt-1.5 mb-[5px] text-base leading-6 text-gray-postmark-dark">
-                            This purchase will appear as "[Credit Card Statement Name]"" on your credit card statement for your {{credit_card_brand}}
-                            ending in {{credit_card_last_four}}.
+                            This purchase will appear as "[Credit Card Statement Name]"" on your credit card statement
+                            for your {{credit_card_brand}} ending in {{credit_card_last_four}}.
                             Need to <a href="{{billing_url}}" class="text-blue-postmark">update your payment information</a>?
                           </p>
                           <table align="center" class="discount">
                             <tr>
                               <td align="center">
-                                <h1 class="mt-0 text-2xl text-center font-bold text-gray-postmark-darker">10% off your next purchase!</h1>
-                                <p class="mt-1.5 mb-[5px] text-base leading-6 text-center text-gray-postmark-dark">Thanks for your support! Here's a coupon for 10% off your next purchase if used by {{expiration_date}}.</p>
+                                <h1 class="mt-0 text-2xl text-center font-bold text-gray-postmark-darker">
+                                  10% off your next purchase!
+                                </h1>
+                                <p class="mt-1.5 mb-[5px] text-base leading-6 text-center text-gray-postmark-dark">
+                                  Thanks for your support!
+                                  Here's a coupon for 10% off your next purchase if used by {{expiration_date}}.
+                                </p>
                                 <table class="w-full">
                                   <tr>
                                     <td align="center" class="text-base">
-                                      <a href="http://example.com" class="button button--green" target="_blank">Use this discount now...</a>
+                                      <a href="http://example.com" class="button button--green">Use this discount now...</a>
                                     </td>
                                   </tr>
                                 </table>
@@ -43,10 +50,14 @@ bodyClass: bg-gray-postmark-lighter
                           <table class="w-full py-[35px]">
                             <tr>
                               <td>
-                                <h3 align="left" class="mt-0 text-sm text-left font-bold text-gray-postmark-darker">{{receipt_id}}</h3>
+                                <h3 align="left" class="mt-0 text-sm text-left font-bold text-gray-postmark-darker">
+                                  {{receipt_id}}
+                                </h3>
                               </td>
                               <td>
-                                <h3 align="right" class="mt-0 text-sm text-right font-bold text-gray-postmark-darker">{{date}}</h3>
+                                <h3 align="right" class="mt-0 text-sm text-right font-bold text-gray-postmark-darker">
+                                  {{date}}
+                                </h3>
                               </td>
                             </tr>
                             <tr>
@@ -54,24 +65,36 @@ bodyClass: bg-gray-postmark-lighter
                                 <table class="w-full pt-[25px]">
                                   <tr>
                                     <th align="left" class="purchase_heading pb-2">
-                                      <p class="m-0 text-xs leading-6 text-gray-postmark-meta">Description</p>
+                                      <p class="m-0 text-xs leading-6 text-gray-postmark-meta">
+                                        Description
+                                      </p>
                                     </th>
                                     <th align="right" class="purchase_heading pb-2">
-                                      <p class="m-0 text-xs leading-6 text-gray-postmark-meta">Amount</p>
+                                      <p class="m-0 text-xs leading-6 text-gray-postmark-meta">
+                                        Amount
+                                      </p>
                                     </th>
                                   </tr>
                                   {{#each receipt_details}}
                                   <tr>
-                                    <td class="w-4/5 text-base leading-4.5 py-2.5 text-gray-postmark-dark">{{description}}</td>
-                                    <td align="right" class="w-1/5 text-base text-right">{{amount}}</td>
+                                    <td class="w-4/5 text-base leading-4.5 py-2.5 text-gray-postmark-dark">
+                                      {{description}}
+                                    </td>
+                                    <td align="right" class="w-1/5 text-base text-right">
+                                      {{amount}}
+                                    </td>
                                   </tr>
                                   {{/each}}
                                   <tr>
                                     <td class="purchase_footer w-4/5">
-                                      <p align="right" class="m-0 pr-4 text-base leading-6 text-right text-gray-postmark-darker font-bold">Total</p>
+                                      <p align="right" class="m-0 pr-4 text-base leading-6 text-right text-gray-postmark-darker font-bold">
+                                        Total
+                                      </p>
                                     </td>
                                     <td class="purchase_footer w-1/5">
-                                      <p align="right" class="m-0 text-base leading-6 text-right text-gray-postmark-darker font-bold">{{total}}</p>
+                                      <p align="right" class="m-0 text-base leading-6 text-right text-gray-postmark-darker font-bold">
+                                        {{total}}
+                                      </p>
                                     </td>
                                   </tr>
                                 </table>
@@ -92,7 +115,7 @@ bodyClass: bg-gray-postmark-lighter
                                 <table class="w-full">
                                   <tr>
                                     <td align="center">
-                                      <a href="{{action_url}}" class="button button--blue" target="_blank">Download as PDF</a>
+                                      <a href="{{action_url}}" class="button button--blue">Download as PDF</a>
                                     </td>
                                   </tr>
                                 </table>

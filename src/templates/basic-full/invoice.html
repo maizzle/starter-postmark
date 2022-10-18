@@ -16,8 +16,12 @@ bodyClass: bg-gray-postmark-lighter
                   <tr>
                     <td class="p-[45px]">
                       <div class="text-base">
-                        <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">Hi {{name}},</h1>
-                        <p class="mt-1.5 mb-[5px] text-base leading-6 text-gray-postmark-dark">Thanks for using [[ page.company.product ]]. This is an invoice for your recent purchase.</p>
+                        <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">
+                          Hi {{name}},
+                        </h1>
+                        <p class="mt-1.5 mb-[5px] text-base leading-6 text-gray-postmark-dark">
+                          Thanks for using [[ page.company.product ]]. This is an invoice for your recent purchase.
+                        </p>
                         <table class="w-full mb-[21px]">
                           <tr>
                             <td class="attributes_content p-4 text-base bg-gray-postmark-lightest">
@@ -42,7 +46,7 @@ bodyClass: bg-gray-postmark-lighter
                               <table class="w-full">
                                 <tr>
                                   <td align="center" class="text-base">
-                                    <a href="{{action_url}}" class="button button--green" target="_blank">Pay Invoice</a>
+                                    <a href="{{action_url}}" class="button button--green">Pay Invoice</a>
                                   </td>
                                 </tr>
                               </table>
@@ -52,10 +56,14 @@ bodyClass: bg-gray-postmark-lighter
                         <table class="purchase w-full py-[35px]">
                           <tr>
                             <td>
-                              <h3 class="mt-0 text-sm text-left text-gray-postmark-darker font-bold">{{invoice_id}}</h3>
+                              <h3 class="mt-0 text-sm text-left text-gray-postmark-darker font-bold">
+                                {{invoice_id}}
+                              </h3>
                             </td>
                             <td>
-                              <h3 class="mt-0 text-sm text-right text-gray-postmark-darker font-bold">{{date}}</h3>
+                              <h3 class="mt-0 text-sm text-right text-gray-postmark-darker font-bold">
+                                {{date}}
+                              </h3>
                             </td>
                           </tr>
                           <tr>
@@ -81,10 +89,14 @@ bodyClass: bg-gray-postmark-lighter
                                 {{/each}}
                                 <tr>
                                   <td class="purchase_footer w-4/5">
-                                    <p align="right" class="m-0 pr-4 text-base leading-6 text-right font-bold text-gray-postmark-darker">Total</p>
+                                    <p align="right" class="m-0 pr-4 text-base leading-6 text-right font-bold text-gray-postmark-darker">
+                                      Total
+                                    </p>
                                   </td>
                                   <td class="purchase_footer w-1/5">
-                                    <p align="right" class="m-0 text-base leading-6 text-right font-bold text-gray-postmark-darker">{{total}}</p>
+                                    <p align="right" class="m-0 text-base leading-6 text-right font-bold text-gray-postmark-darker">
+                                      {{total}}
+                                    </p>
                                   </td>
                                 </tr>
                               </table>
@@ -102,8 +114,12 @@ bodyClass: bg-gray-postmark-lighter
                         <table class="body-sub">
                           <tr>
                             <td>
-                              <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">If you're having trouble with the button above, copy and paste the URL below into your web browser.</p>
-                              <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">{{action_url}}</p>
+                              <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">
+                                If you're having trouble with the button above, copy and paste the URL below into your web browser.
+                              </p>
+                              <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">
+                                {{action_url}}
+                              </p>
                             </td>
                           </tr>
                         </table>

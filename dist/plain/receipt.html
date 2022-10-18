@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" style="color-scheme: light dark;">
 <head>
   <meta charset="utf-8">
   <meta name="x-apple-disable-message-reformatting">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
   <meta name="color-scheme" content="light dark">
   <meta name="supported-color-schemes" content="light dark">
   <!--[if mso]>
@@ -21,9 +20,21 @@
   </style>
   <![endif]-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet" media="screen">
   <style>
+    @media (max-width: 600px) {
+      .button {
+        width: 100% !important;
+        text-align: center !important;
+      }
+    }
+    .purchase_heading p {
+      margin: 0;
+      font-size: 12px;
+      line-height: 24px;
+      color: #85878E;
+    }
     @media (prefers-color-scheme: dark) {
       body,
       .email-body,
@@ -44,9 +55,15 @@
       h3 {
         color: #fff !important;
       }
+      .discount {
+        background-color: #222222 !important;
+      }
       .email-masthead_name {
         text-shadow: none !important;
       }
+    }
+    :root {
+      color-scheme: light dark;
     }
     @media (max-width: 600px) {
       .sm-w-full {
@@ -55,15 +72,15 @@
     }
   </style>
 </head>
-<body class="page_bodyClass" style="word-break: break-word; -webkit-font-smoothing: antialiased; margin: 0; width: 100%; padding: 0">
-  <div role="article" aria-roledescription="email" aria-label="" lang="en">
+<body style="word-break: break-word; -webkit-font-smoothing: antialiased; margin: 0; width: 100%; padding: 0">
+  <div role="article" aria-roledescription="email" aria-label lang="en">
     <table class="email-wrapper" style="width: 100%; font-family: 'Nunito Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" cellpadding="0" cellspacing="0" role="presentation">
       <tr>
         <td align="center">
           <table class="email-content" style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
             <tr>
               <td align="center" class="email-masthead" style="padding-top: 25px; padding-bottom: 25px; text-align: center; font-size: 16px">
-                <a href="https://example.com" class="email-masthead_name" style="text-decoration: none; text-shadow: 0 1px 0 #FFFFFF; font-size: 16px; font-weight: 700; color: #A8AAAF">
+                <a href="https://example.com" class="email-masthead_name" style="text-decoration: none; text-shadow: 0 1px 0 #FFF; font-size: 16px; font-weight: 700; color: #A8AAAF">
                   [Product Name]
                 </a>
               </td>
@@ -74,7 +91,9 @@
                   <tr>
                     <td style="padding: 45px">
                       <div style="font-size: 16px">
-                        <h1 style="margin-top: 0; text-align: left; font-size: 24px; font-weight: 700; color: #333333">Hi {{name}},</h1>
+                        <h1 style="margin-top: 0; text-align: left; font-size: 24px; font-weight: 700; color: #333333">
+                          Hi {{name}},
+                        </h1>
                         <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">
                           Thanks for using [[ page.company.product ]]. This email is the receipt for your purchase. No payment is due.
                         </p>
@@ -86,12 +105,17 @@
                         <table align="center" style="width: 100%; background-color: #F4F4F7; padding: 96px; border: 2px dashed #cbcccf" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
                             <td align="center">
-                              <h1 style="margin-top: 0; text-align: center; font-size: 24px; font-weight: 700; color: #333333">10% off your next purchase!</h1>
-                              <p style="margin-top: 6px; margin-bottom: 5px; text-align: center; font-size: 16px; line-height: 24px; color: #51545E">Thanks for your support! Here's a coupon for 10% off your next purchase if used by {{expiration_date}}.</p>
+                              <h1 style="margin-top: 0; text-align: center; font-size: 24px; font-weight: 700; color: #333333">
+                                10% off your next purchase!
+                              </h1>
+                              <p style="margin-top: 6px; margin-bottom: 5px; text-align: center; font-size: 16px; line-height: 24px; color: #51545E">
+                                Thanks for your support!
+                                Here's a coupon for 10% off your next purchase if used by {{expiration_date}}.
+                              </p>
                               <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
                                 <tr>
                                   <td align="center" style="font-size: 16px">
-                                    <a href="http://example.com" target="_blank" style="display: inline-block; color: #fff; text-decoration-line: none; border-radius: 3px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16); background-color: #22BC66; border-color: #22bc66; border-style: solid; border-width: 10px 18px">Use this discount now...</a>
+                                    <a href="http://example.com" style="display: inline-block; color: #fff; text-decoration-line: none; border-radius: 3px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16); background-color: #22BC66; border-color: #22bc66; border-style: solid; border-width: 10px 18px">Use this discount now...</a>
                                   </td>
                                 </tr>
                               </table>
@@ -101,10 +125,14 @@
                         <table style="width: 100%; padding-top: 35px; padding-bottom: 35px" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
                             <td>
-                              <h3 align="left" style="margin-top: 0; text-align: left; font-size: 14px; font-weight: 700; color: #333333">{{receipt_id}}</h3>
+                              <h3 align="left" style="margin-top: 0; text-align: left; font-size: 14px; font-weight: 700; color: #333333">
+                                {{receipt_id}}
+                              </h3>
                             </td>
                             <td>
-                              <h3 align="right" style="margin-top: 0; text-align: right; font-size: 14px; font-weight: 700; color: #333333">{{date}}</h3>
+                              <h3 align="right" style="margin-top: 0; text-align: right; font-size: 14px; font-weight: 700; color: #333333">
+                                {{date}}
+                              </h3>
                             </td>
                           </tr>
                           <tr>
@@ -120,16 +148,24 @@
                                 </tr>
                                 {{#each receipt_details}}
                                   <tr>
-                                    <td style="width: 80%; padding-top: 10px; padding-bottom: 10px; font-size: 16px; line-height: 18px; color: #51545E">{{description}}</td>
-                                    <td align="right" style="width: 20%; text-align: right; font-size: 16px">{{amount}}</td>
+                                    <td style="width: 80%; padding-top: 10px; padding-bottom: 10px; font-size: 16px; line-height: 18px; color: #51545E">
+                                      {{description}}
+                                    </td>
+                                    <td align="right" style="width: 20%; text-align: right; font-size: 16px">
+                                      {{amount}}
+                                    </td>
                                   </tr>
                                 {{/each}}
                                 <tr>
                                   <td style="padding-top: 16px; vertical-align: middle; font-size: 16px; border-top: 1px solid #eaeaec; width: 80%" valign="middle">
-                                    <p align="right" style="margin: 0; padding-right: 16px; text-align: right; font-size: 16px; font-weight: 700; line-height: 24px; color: #333333">Total</p>
+                                    <p align="right" style="margin: 0; padding-right: 16px; text-align: right; font-size: 16px; font-weight: 700; line-height: 24px; color: #333333">
+                                      Total
+                                    </p>
                                   </td>
                                   <td style="padding-top: 16px; vertical-align: middle; font-size: 16px; border-top: 1px solid #eaeaec; width: 20%" valign="middle">
-                                    <p align="right" style="margin: 0; text-align: right; font-size: 16px; font-weight: 700; line-height: 24px; color: #333333">{{total}}</p>
+                                    <p align="right" style="margin: 0; text-align: right; font-size: 16px; font-weight: 700; line-height: 24px; color: #333333">
+                                      {{total}}
+                                    </p>
                                   </td>
                                 </tr>
                               </table>
@@ -150,7 +186,7 @@
                               <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
                                 <tr>
                                   <td align="center">
-                                    <a href="{{action_url}}" target="_blank" style="display: inline-block; color: #fff; text-decoration-line: none; background-color: #3869D4; border-color: #3869d4; border-style: solid; border-width: 10px 18px; border-radius: 3px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16)">Download as PDF</a>
+                                    <a href="{{action_url}}" style="display: inline-block; color: #fff; text-decoration-line: none; background-color: #3869D4; border-color: #3869d4; border-style: solid; border-width: 10px 18px; border-radius: 3px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16)">Download as PDF</a>
                                   </td>
                                 </tr>
                               </table>
@@ -180,7 +216,9 @@
                 <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; text-align: center" cellpadding="0" cellspacing="0" role="presentation">
                   <tr>
                     <td align="center" style="padding: 45px; font-size: 16px">
-                      <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">&copy; 2022 [Product Name]. All rights reserved.</p>
+                      <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
+                        &copy; 2022 [Product Name]. All rights reserved.
+                      </p>
                       <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
                         [Company Name, LLC] <br>1234 Street Rd.
                         <br>Suite 1234

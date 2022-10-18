@@ -16,7 +16,9 @@ bodyClass: bg-gray-postmark-lighter
                     <tr>
                       <td class="p-[45px]">
                         <div class="text-base">
-                          <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">Welcome, {{ name }}!</h1>
+                          <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">
+                            Welcome, {{ name }}!
+                          </h1>
                           <p class="mt-1.5 mb-[5px] text-base leading-6 text-gray-postmark-dark">
                             Thanks for trying [[ page.company.product ]]. We're thrilled to have you on board. To get the most out of [[ page.company.product ]], do this primary next step:
                           </p>
@@ -26,7 +28,7 @@ bodyClass: bg-gray-postmark-lighter
                                 <table class="w-full">
                                   <tr>
                                     <td align="center" class="text-base">
-                                      <a href="{{action_url}}" class="button button--blue" target="_blank">Do this Next</a>
+                                      <a href="{{action_url}}" class="button button--blue">Do this Next</a>
                                     </td>
                                   </tr>
                                 </table>
@@ -90,8 +92,12 @@ bodyClass: bg-gray-postmark-lighter
                           <table class="body-sub">
                             <tr>
                               <td>
-                                <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">If you're having trouble with the button above, copy and paste the URL below into your web browser.</p>
-                                <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">{{action_url}}</p>
+                                <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">
+                                  If you're having trouble with the button above, copy and paste the URL below into your web browser.
+                                </p>
+                                <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">
+                                  {{action_url}}
+                                </p>
                               </td>
                             </tr>
                           </table>

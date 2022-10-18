@@ -21,7 +21,10 @@
                                 <table class="w-full">
                                   {{#each . }}
                                   <tr>
-                                    <td class="text-base"><a href="{{attachment_url}}" class="text-blue-postmark">{{attachment_name}}</a> <span>({{attachment_size}} {{attachment_type}})</span></td>
+                                    <td class="text-base">
+                                      <a href="{{attachment_url}}" class="text-blue-postmark">{{attachment_name}}</a>
+                                      <span>({{attachment_size}} {{attachment_type}})</span>
+                                    </td>
                                   </tr>
                                   {{/each}}
                                 </table>
@@ -29,8 +32,14 @@
                             </tr>
                           </table>
                           {{/attachment_details}}
-                          <p class="mt-1.5 mb-[5px] text-base leading-6 text-gray-postmark-dark">By {{commenter_name}} at {{timestamp}}</p>
-                          <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark"><a href="{{action_url}}" class="text-blue-postmark">View the comment</a> or <a href="{{notifications_url}}" class="text-blue-postmark">Manage notifications</a></p>
+                          <p class="mt-1.5 mb-[5px] text-base leading-6 text-gray-postmark-dark">
+                            By {{commenter_name}} at {{timestamp}}
+                          </p>
+                          <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">
+                            <a href="{{action_url}}" class="text-blue-postmark">View the comment</a>
+                            or
+                            <a href="{{notifications_url}}" class="text-blue-postmark">Manage notifications</a>
+                          </p>
                         </div>
                       </td>
                     </tr>
