@@ -3,9 +3,8 @@
 <head>
   <meta charset="[[ page.charset || 'utf-8' ]]">
   <meta name="x-apple-disable-message-reformatting">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
   <meta name="color-scheme" content="light dark">
   <meta name="supported-color-schemes" content="light dark">
   <!--[if mso]>
@@ -26,12 +25,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet" media="screen">
-  <if condition="page.css">
-    <style>[[[ page.css ]]]</style>
-  </if>
+  <style>
+    [[[ page.css ]]]
+  </style>
   <block name="head"></block>
 </head>
-<body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}">
+<body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] [[ page.bodyClass || '' ]]">
   <if condition="page.preheader">
     <div class="hidden">
       [[[ page.preheader ]]]
