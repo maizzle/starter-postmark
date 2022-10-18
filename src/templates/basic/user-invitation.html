@@ -15,9 +15,12 @@ bodyClass: bg-gray-postmark-lighter
                   <tr>
                     <td class="p-[45px]">
                       <div class="text-base">
-                        <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">Hi, {{ name }}!</h1>
+                        <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">
+                          Hi, {{ name }}!
+                        </h1>
                         <p class="mt-1.5 mb-[5px] text-base leading-6 text-gray-postmark-dark">
-                          {{invite_sender_name}} with {{invite_sender_organization_name}} has invited you to use [[ page.company.product ]] to collaborate with them.
+                          {{invite_sender_name}} with {{invite_sender_organization_name}}
+                          has invited you to use [[ page.company.product ]] to collaborate with them.
                           Use the button below to set up your account and get started:
                         </p>
                         <table align="center" class="w-full text-center my-7.5 mx-auto">
@@ -26,7 +29,7 @@ bodyClass: bg-gray-postmark-lighter
                               <table class="w-full">
                                 <tr>
                                   <td align="center" class="text-base">
-                                    <a href="{{action_url}}" class="button button--blue" target="_blank">Set up account</a>
+                                    <a href="{{action_url}}" class="button button--blue">Set up account</a>
                                   </td>
                                 </tr>
                               </table>
@@ -43,13 +46,18 @@ bodyClass: bg-gray-postmark-lighter
                           <br>The [[ page.company.product ]] Team
                         </p>
                         <p class="mt-1.5 mb-[5px] text-base leading-6 text-gray-postmark-dark">
-                          <strong>P.S.</strong> Need help getting started? Check out our <a href="{{help_url}}" class="text-blue-postmark">help documentation</a>.
+                          <strong>P.S.</strong> Need help getting started?
+                          Check out our <a href="{{help_url}}" class="text-blue-postmark">help documentation</a>.
                         </p>
                         <table class="body-sub">
                           <tr>
                             <td>
-                              <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">If you're having trouble with the button above, copy and paste the URL below into your web browser.</p>
-                              <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">{{action_url}}</p>
+                              <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">
+                                If you're having trouble with the button above, copy and paste the URL below into your web browser.
+                              </p>
+                              <p class="mt-1.5 mb-[5px] text-xs leading-6 text-gray-postmark-dark">
+                                {{action_url}}
+                              </p>
                             </td>
                           </tr>
                         </table>
