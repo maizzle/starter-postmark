@@ -27,6 +27,7 @@
 
 @screen sm {
   .button {
+    @apply box-border;
     @apply w-full text-center !important;
   }
 }
