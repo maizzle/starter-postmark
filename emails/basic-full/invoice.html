@@ -1,0 +1,130 @@
+---
+preheader: "This is an invoice for your purchase on {{ purchase_date }}. Please submit payment by {{ due_date }}"
+bodyClass: bg-gray-postmark-lighter
+---
+
+<x-main>
+  <table class="email-wrapper w-full bg-gray-postmark-lighter font-sans">
+    <tr>
+      <td align="center">
+        <table class="email-content w-full">
+          <x-header />
+          <tr>
+            <td class="email-body w-full bg-white">
+              <table align="center" class="email-body_inner w-[570px] bg-white mx-auto sm:w-full">
+                <tr>
+                  <td class="p-[45px]">
+                    <div class="text-base">
+                      <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">
+                        Hi {{name}},
+                      </h1>
+                      <p class="m-0 mt-1.5 mb-[5px] text-base/6 text-gray-postmark-dark">
+                        Thanks for using {{ page.company.product ]}} This is an invoice for your recent purchase.
+                      </p>
+                      <table class="w-full mb-[21px]">
+                        <tr>
+                          <td class="attributes_content p-4 text-base bg-gray-postmark-lightest">
+                            <table class="w-full">
+                              <tr>
+                                <td class="text-base text-gray-postmark-dark">
+                                  <strong>Amount Due:</strong> {{total}}
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-base text-gray-postmark-dark">
+                                  <strong>Due By:</strong> {{due_date}}
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="w-full m-0 my-7.5">
+                        <tr>
+                          <td class="text-base text-center">
+                            <a href="{{action_url}}" class="button button--green">Pay Invoice</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="purchase w-full py-[35px]">
+                        <tr>
+                          <td>
+                            <h3 class="mt-0 text-sm text-left text-gray-postmark-darker font-bold">
+                              {{invoice_id}}
+                            </h3>
+                          </td>
+                          <td>
+                            <h3 class="mt-0 text-sm text-right text-gray-postmark-darker font-bold">
+                              {{date}}
+                            </h3>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <table class="w-full pt-[25px]">
+                              <tr>
+                                <th class="purchase_heading pb-2 text-left">
+                                  <p>Description</p>
+                                </th>
+                                <th class="purchase_heading pb-2 text-left">
+                                  <p>Amount</p>
+                                </th>
+                              </tr>
+                              {{#each invoice_details}}
+                              <tr>
+                                <td class="w-4/5 text-base/4.5 py-2.5 text-gray-postmark-dark">
+                                  {{description}}
+                                </td>
+                                <td class="w-1/5 text-base text-right">
+                                  {{amount}}
+                                </td>
+                              </tr>
+                              {{/each}}
+                              <tr>
+                                <td class="purchase_footer w-4/5">
+                                  <p class="m-0 pr-4 text-base/6 text-right font-bold text-gray-postmark-darker">
+                                    Total
+                                  </p>
+                                </td>
+                                <td class="purchase_footer w-1/5">
+                                  <p class="m-0 text-base/6 text-right font-bold text-gray-postmark-darker">
+                                    {{total}}
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <p class="m-0 mt-1.5 mb-[5px] text-base/6 text-gray-postmark-dark">
+                        If you have any questions about this invoice, simply reply to this email or reach out to our
+                        <a href="{{support_url}}" class="text-blue-postmark">support team</a> for help.
+                      </p>
+                      <p class="m-0 mt-1.5 mb-[5px] text-base/6 text-gray-postmark-dark">
+                        Cheers,
+                        <br>The {{ page.company.product }} Team
+                      </p>
+                      <table class="body-sub">
+                        <tr>
+                          <td>
+                            <p class="m-0 mt-1.5 mb-[5px] text-xs/6 text-gray-postmark-dark">
+                              If you're having trouble with the button above, copy and paste the URL below into your web browser.
+                            </p>
+                            <p class="m-0 mt-1.5 mb-[5px] text-xs/6 text-gray-postmark-dark">
+                              {{action_url}}
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <x-footer />
+        </table>
+      </td>
+    </tr>
+  </table>
+</x-main>

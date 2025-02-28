@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" style="color-scheme: light dark;">
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
 <head>
   <meta charset="utf-8">
   <meta name="x-apple-disable-message-reformatting">
@@ -23,11 +23,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet" media="screen">
   <style>
+    .button {
+      display: inline-block;
+      color: #fffffe;
+      text-decoration: none;
+      background-color: #3869D4;
+      border-top: 10px solid #3869D4;
+      border-right: 18px solid #3869D4;
+      border-bottom: 10px solid #3869D4;
+      border-left: 18px solid #3869D4;
+      border-radius: 3px;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+    }
     @media (max-width: 600px) {
       .button {
-        width: 100% !important;
+        display: block !important;
         text-align: center !important;
       }
+    }
+    .body-sub {
+      margin-top: 25px;
+      border-top-width: 1px;
+      padding-top: 25px;
+      border-top-color: #EAEAEC;
+      border-top-style: solid;
     }
     @media (prefers-color-scheme: dark) {
       body,
@@ -38,7 +57,7 @@
       .email-masthead,
       .email-footer {
         background-color: #333333 !important;
-        color: #fff !important;
+        color: #fffffe !important;
       }
       p,
       ul,
@@ -47,7 +66,7 @@
       h1,
       h2,
       h3 {
-        color: #fff !important;
+        color: #fffffe !important;
       }
       .attributes_content {
         background-color: #222222 !important;
@@ -56,9 +75,6 @@
         text-shadow: none !important;
       }
     }
-    :root {
-      color-scheme: light dark;
-    }
     @media (max-width: 600px) {
       .sm-w-full {
         width: 100% !important;
@@ -66,53 +82,47 @@
     }
   </style>
 </head>
-<body style="word-break: break-word; -webkit-font-smoothing: antialiased; margin: 0; width: 100%; padding: 0">
+<body style="margin: 0; width: 100%; padding: 0; -webkit-font-smoothing: antialiased; word-break: break-word">
   <div role="article" aria-roledescription="email" aria-label lang="en">
-    <table class="email-wrapper" style="width: 100%; font-family: 'Nunito Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" cellpadding="0" cellspacing="0" role="presentation">
+    <table class="email-wrapper" style="width: 100%; font-family: 'Nunito Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" cellpadding="0" cellspacing="0" role="none">
       <tr>
         <td align="center">
-          <table class="email-content" style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+          <table class="email-content" style="width: 100%" cellpadding="0" cellspacing="0" role="none">
             <tr>
               <td align="center" class="email-masthead" style="padding-top: 25px; padding-bottom: 25px; text-align: center; font-size: 16px">
-                <a href="https://example.com" class="email-masthead_name" style="text-decoration: none; text-shadow: 0 1px 0 #FFF; font-size: 16px; font-weight: 700; color: #A8AAAF">
+                <a href="https://example.com" class="email-masthead_name" style="font-size: 16px; font-weight: 700; color: #A8AAAF; text-decoration: none; text-shadow: 0 1px 0 #FFF">
                   [Product Name]
                 </a>
               </td>
             </tr>
             <tr>
-              <td class="email-body" style="width: 100%; background-color: #fff">
-                <table align="center" class="email-body_inner sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; background-color: #fff" cellpadding="0" cellspacing="0" role="presentation">
+              <td class="email-body" style="width: 100%; background-color: #fffffe">
+                <table align="center" class="email-body_inner sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; background-color: #fffffe" cellpadding="0" cellspacing="0" role="none">
                   <tr>
                     <td style="padding: 45px">
                       <div style="font-size: 16px">
                         <h1 style="margin-top: 0; text-align: left; font-size: 24px; font-weight: 700; color: #333333">
                           Welcome, {{ name }}!
                         </h1>
-                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">
-                          Thanks for trying [[ page.company.product ]].
+                        <p style="margin: 6px 0 5px; font-size: 16px; line-height: 24px; color: #51545E">
+                          Thanks for trying [Product Name].
                           We're thrilled to have you on board.
-                          To get the most out of [[ page.company.product ]], do this primary next step:
+                          To get the most out of [Product Name], do this primary next step:
                         </p>
-                        <table align="center" style="margin: 30px auto; width: 100%; text-align: center" cellpadding="0" cellspacing="0" role="presentation">
+                        <table style="margin: 30px 0; width: 100%" cellpadding="0" cellspacing="0" role="none">
                           <tr>
-                            <td align="center">
-                              <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
-                                <tr>
-                                  <td align="center" style="font-size: 16px">
-                                    <a href="{{action_url}}" style="display: inline-block; color: #fff; text-decoration-line: none; background-color: #3869D4; border-color: #3869d4; border-style: solid; border-width: 10px 18px; border-radius: 3px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16)">Do this Next</a>
-                                  </td>
-                                </tr>
-                              </table>
+                            <td style="text-align: center; font-size: 16px">
+                              <a href="{{action_url}}" class="button" style="display: inline-block; color: #fffffe; text-decoration: none; background-color: #3869D4; border-color: #3869d4; border-style: solid; border-width: 10px 18px; border-radius: 3px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16)">Do this Next</a>
                             </td>
                           </tr>
                         </table>
-                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">
+                        <p style="margin: 6px 0 5px; font-size: 16px; line-height: 24px; color: #51545E">
                           For reference, here's your login information:
                         </p>
-                        <table style="margin-bottom: 21px; width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                        <table style="margin-bottom: 21px; width: 100%" cellpadding="0" cellspacing="0" role="none">
                           <tr>
                             <td class="attributes_content" style="background-color: #F4F4F7; padding: 16px">
-                              <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                              <table style="width: 100%" cellpadding="0" cellspacing="0" role="none">
                                 <tr>
                                   <td style="font-size: 16px">
                                     <strong style="color: #51545E">Login Page:</strong> {{login_url}}
@@ -127,13 +137,13 @@
                             </td>
                           </tr>
                         </table>
-                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">
+                        <p style="margin: 6px 0 5px; font-size: 16px; line-height: 24px; color: #51545E">
                           You've started a {{trial_length}} day trial. You can upgrade to a paying account or cancel any time.
                         </p>
-                        <table style="margin-bottom: 21px; width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                        <table style="margin-bottom: 21px; width: 100%" cellpadding="0" cellspacing="0" role="none">
                           <tr>
                             <td class="attributes_content" style="background-color: #F4F4F7; padding: 16px">
-                              <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                              <table style="width: 100%" cellpadding="0" cellspacing="0" role="none">
                                 <tr>
                                   <td style="font-size: 16px">
                                     <strong style="color: #51545E">Trial Start Date:</strong> {{trial_start_date}}
@@ -148,28 +158,28 @@
                             </td>
                           </tr>
                         </table>
-                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">
+                        <p style="margin: 6px 0 5px; font-size: 16px; line-height: 24px; color: #51545E">
                           If you have any questions, feel free to
                           <a href="mailto:{{support_email}}" style="color: #3869D4">email our customer success team</a>.
                           (We're lightning quick at replying.)
                           We also offer <a href="{{live_chat_url}}" style="color: #3869D4">live chat</a> during business hours.
                         </p>
-                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">
+                        <p style="margin: 6px 0 5px; font-size: 16px; line-height: 24px; color: #51545E">
                           Thanks,
-                          <br>[[ page.company.sender ]] and the [[ page.company.product ]] Team
+                          <br>[Sender Name] and the [Product Name] Team
                         </p>
-                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">
+                        <p style="margin: 6px 0 5px; font-size: 16px; line-height: 24px; color: #51545E">
                           <strong>P.S.</strong> Need immediate help getting started?
                           Check out our <a href="{{help_url}}" style="color: #3869D4">help documentation</a>.
-                          Or, just reply to this email, the [[ page.company.product ]] support team is always ready to help!
+                          Or, just reply to this email, the [Product Name] support team is always ready to help!
                         </p>
-                        <table style="margin-top: 25px; padding-top: 25px; border-top: 1px solid #eaeaec" cellpadding="0" cellspacing="0" role="presentation">
+                        <table style="margin-top: 25px; padding-top: 25px; border-top: 1px solid #eaeaec" cellpadding="0" cellspacing="0" role="none">
                           <tr>
                             <td>
-                              <p style="margin-top: 6px; margin-bottom: 5px; font-size: 12px; line-height: 24px; color: #51545E">
+                              <p style="margin: 6px 0 5px; font-size: 12px; line-height: 24px; color: #51545E">
                                 If you're having trouble with the button above, copy and paste the URL below into your web browser.
                               </p>
-                              <p style="margin-top: 6px; margin-bottom: 5px; font-size: 12px; line-height: 24px; color: #51545E">
+                              <p style="margin: 6px 0 5px; font-size: 12px; line-height: 24px; color: #51545E">
                                 {{action_url}}
                               </p>
                             </td>
@@ -183,15 +193,16 @@
             </tr>
             <tr>
               <td>
-                <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; text-align: center" cellpadding="0" cellspacing="0" role="presentation">
+                <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; text-align: center" cellpadding="0" cellspacing="0" role="none">
                   <tr>
                     <td align="center" style="padding: 45px; font-size: 16px">
-                      <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
-                        &copy; 2022 [Product Name]. All rights reserved.
+                      <p style="margin-bottom: 20px; margin-top: 6px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
+                        &copy; 2025 [Product Name]. All rights reserved.
                       </p>
-                      <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
-                        [Company Name, LLC] <br>1234 Street Rd.
-                        <br>Suite 1234
+                      <p style="margin-bottom: 20px; margin-top: 6px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
+                        [Company Name, LLC]
+                        <br>
+                        1234 Street Rd. <br>Suite 1234
                       </p>
                     </td>
                   </tr>

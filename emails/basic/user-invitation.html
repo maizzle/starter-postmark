@@ -1,0 +1,68 @@
+---
+bodyClass: bg-gray-postmark-lighter
+---
+
+<x-main>
+  <table class="email-wrapper w-full bg-gray-postmark-lighter font-sans">
+    <tr>
+      <td align="center">
+        <table class="email-content w-full">
+          <x-header />
+          <tr>
+            <td class="email-body w-full">
+              <table align="center" class="email-body_inner w-[570px] bg-white mx-auto sm:w-full">
+                <tr>
+                  <td class="p-[45px]">
+                    <div class="text-base">
+                      <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">
+                        Hi, {{ name }}!
+                      </h1>
+                      <p class="m-0 mt-1.5 mb-[5px] text-base/6 text-gray-postmark-dark">
+                        {{invite_sender_name}} with {{invite_sender_organization_name}}
+                        has invited you to use {{ page.company.product }} to collaborate with them.
+                        Use the button below to set up your account and get started:
+                      </p>
+                      <table class="w-full m-0 my-7.5">
+                        <tr>
+                          <td class="text-base text-center">
+                            <a href="{{action_url}}" class="button button--blue">Set up account</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <p class="m-0 mt-1.5 mb-[5px] text-base/6 text-gray-postmark-dark">
+                        If you have any questions for {{invite_sender_name}}, you can reply to this email and it will go right to them.
+                        Alternatively, feel free to <a href="mailto:{{support_email}}" class="text-blue-postmark">contact our customer success team</a> anytime.
+                        (We're lightning quick at replying.) We also offer <a href="{{live_chat_url}}" class="text-blue-postmark">live chat</a> during business hours.
+                      </p>
+                      <p class="m-0 mt-1.5 mb-[5px] text-base/6 text-gray-postmark-dark">
+                        Welcome aboard,
+                        <br>The {{ page.company.product }} Team
+                      </p>
+                      <p class="m-0 mt-1.5 mb-[5px] text-base/6 text-gray-postmark-dark">
+                        <strong>P.S.</strong> Need help getting started?
+                        Check out our <a href="{{help_url}}" class="text-blue-postmark">help documentation</a>.
+                      </p>
+                      <table class="body-sub">
+                        <tr>
+                          <td>
+                            <p class="m-0 mt-1.5 mb-[5px] text-xs/6 text-gray-postmark-dark">
+                              If you're having trouble with the button above, copy and paste the URL below into your web browser.
+                            </p>
+                            <p class="m-0 mt-1.5 mb-[5px] text-xs/6 text-gray-postmark-dark">
+                              {{action_url}}
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <x-footer />
+        </table>
+      </td>
+    </tr>
+  </table>
+</x-main>

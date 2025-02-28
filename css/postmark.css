@@ -1,0 +1,92 @@
+.button {
+  @apply inline-block text-white no-underline;
+  background-color: #3869D4;
+  border-top: 10px solid #3869D4;
+  border-right: 18px solid #3869D4;
+  border-bottom: 10px solid #3869D4;
+  border-left: 18px solid #3869D4;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+}
+
+.button--green {
+  background-color: #22BC66;
+  border-top: 10px solid #22BC66;
+  border-right: 18px solid #22BC66;
+  border-bottom: 10px solid #22BC66;
+  border-left: 18px solid #22BC66;
+}
+
+.button--red {
+  background-color: #FF6136;
+  border-top: 10px solid #FF6136;
+  border-right: 18px solid #FF6136;
+  border-bottom: 10px solid #FF6136;
+  border-left: 18px solid #FF6136;
+}
+
+@screen sm {
+  .button {
+    @apply block text-center !important;
+  }
+}
+
+.purchase_heading {
+  border-bottom-width: 1px;
+  border-bottom-color: #EAEAEC;
+  border-bottom-style: solid;
+}
+
+.purchase_heading p {
+  @apply text-xs leading-6 m-0;
+  color: #85878E;
+}
+
+.purchase_footer {
+  @apply pt-4 text-base align-middle;
+  border-top-width: 1px;
+  border-top-color: #EAEAEC;
+  border-top-style: solid;
+}
+
+.body-sub {
+  @apply mt-[25px] pt-[25px] border-t;
+  border-top-color: #EAEAEC;
+  border-top-style: solid;
+}
+
+.discount {
+  @apply w-full p-24 bg-gray-postmark-lightest;
+  border: 2px dashed #cbcccf;
+}
+
+@screen dark {
+  body,
+  .email-body,
+  .email-body_inner,
+  .email-content,
+  .email-wrapper,
+  .email-masthead,
+  .email-footer {
+    @apply bg-gray-postmark-darker text-white !important;
+  }
+
+  p,
+  ul,
+  ol,
+  blockquote,
+  h1,
+  h2,
+  h3 {
+    @apply text-white !important;
+  }
+
+  .attributes_content,
+  .discount {
+    @apply bg-gray-postmark-darkest !important;
+  }
+
+  .email-masthead_name {
+    text-shadow: none !important;
+  }
+}
