@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" style="color-scheme: light dark;">
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
 <head>
   <meta charset="utf-8">
   <meta name="x-apple-disable-message-reformatting">
@@ -39,7 +39,7 @@
       .email-masthead,
       .email-footer {
         background-color: #333333 !important;
-        color: #fff !important;
+        color: #fffffe !important;
       }
       p,
       ul,
@@ -48,7 +48,7 @@
       h1,
       h2,
       h3 {
-        color: #fff !important;
+        color: #fffffe !important;
       }
       .attributes_content {
         background-color: #222222 !important;
@@ -57,9 +57,6 @@
         text-shadow: none !important;
       }
     }
-    :root {
-      color-scheme: light dark;
-    }
     @media (max-width: 600px) {
       .sm-w-full {
         width: 100% !important;
@@ -67,32 +64,32 @@
     }
   </style>
 </head>
-<body style="word-break: break-word; -webkit-font-smoothing: antialiased; margin: 0; width: 100%; background-color: #F2F4F6; padding: 0">
+<body style="margin: 0; width: 100%; background-color: #F2F4F6; padding: 0; -webkit-font-smoothing: antialiased; word-break: break-word">
   <div role="article" aria-roledescription="email" aria-label lang="en">
-    <table class="email-wrapper" style="width: 100%; background-color: #F2F4F6; font-family: 'Nunito Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" cellpadding="0" cellspacing="0" role="presentation">
+    <table class="email-wrapper" style="width: 100%; background-color: #F2F4F6; font-family: 'Nunito Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" cellpadding="0" cellspacing="0" role="none">
       <tr>
         <td align="center">
-          <table class="email-content" style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+          <table class="email-content" style="width: 100%" cellpadding="0" cellspacing="0" role="none">
             <tr>
               <td align="center" class="email-masthead" style="padding-top: 25px; padding-bottom: 25px; text-align: center; font-size: 16px">
-                <a href="https://example.com" class="email-masthead_name" style="text-decoration: none; text-shadow: 0 1px 0 #FFF; font-size: 16px; font-weight: 700; color: #A8AAAF">
+                <a href="https://example.com" class="email-masthead_name" style="font-size: 16px; font-weight: 700; color: #A8AAAF; text-decoration: none; text-shadow: 0 1px 0 #FFF">
                   [Product Name]
                 </a>
               </td>
             </tr>
             <tr>
-              <td class="email-body" style="width: 100%; background-color: #fff">
-                <table align="center" class="email-body_inner sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; background-color: #fff" cellpadding="0" cellspacing="0" role="presentation">
+              <td class="email-body" style="width: 100%; background-color: #fffffe">
+                <table align="center" class="email-body_inner sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; background-color: #fffffe" cellpadding="0" cellspacing="0" role="none">
                   <tr>
                     <td style="padding: 45px">
                       <div style="font-size: 16px">
                         {{body}}
                         <br>
                         <br> {{#attachment_details}}
-                          <table style="margin-bottom: 21px; width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                          <table style="margin-bottom: 21px; width: 100%" cellpadding="0" cellspacing="0" role="none">
                             <tr>
                               <td class="attributes_content" style="background-color: #F4F4F7; padding: 16px; font-size: 16px">
-                                <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                                <table style="width: 100%" cellpadding="0" cellspacing="0" role="none">
                                   {{#each . }}
                                     <tr>
                                       <td style="font-size: 16px"><a href="{{attachment_url}}" style="color: #3869D4">
@@ -105,10 +102,10 @@
                             </tr>
                           </table>
                         {{/attachment_details}}
-                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">
+                        <p style="margin: 6px 0 5px; font-size: 16px; line-height: 24px; color: #51545E">
                           By {{commenter_name}} at {{timestamp}}
                         </p>
-                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 12px; line-height: 24px; color: #51545E">
+                        <p style="margin: 6px 0 5px; font-size: 12px; line-height: 24px; color: #51545E">
                           <a href="{{action_url}}" style="color: #3869D4">View the comment</a>
                           or
                           <a href="{{notifications_url}}" style="color: #3869D4">Manage notifications</a>
@@ -121,15 +118,16 @@
             </tr>
             <tr>
               <td>
-                <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; text-align: center" cellpadding="0" cellspacing="0" role="presentation">
+                <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; text-align: center" cellpadding="0" cellspacing="0" role="none">
                   <tr>
                     <td align="center" style="padding: 45px; font-size: 16px">
-                      <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
-                        &copy; 2022 [Product Name]. All rights reserved.
+                      <p style="margin-bottom: 20px; margin-top: 6px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
+                        &copy; 2025 [Product Name]. All rights reserved.
                       </p>
-                      <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
-                        [Company Name, LLC] <br>1234 Street Rd.
-                        <br>Suite 1234
+                      <p style="margin-bottom: 20px; margin-top: 6px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
+                        [Company Name, LLC]
+                        <br>
+                        1234 Street Rd. <br>Suite 1234
                       </p>
                     </td>
                   </tr>

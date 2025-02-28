@@ -1,0 +1,29 @@
+<script props>
+  module.exports = {
+    company: {
+      product: props.product || '[Product Name]',
+      name: props.name || '[Company Name, LLC]',
+      address: props.address || '1234 Street Rd. <br>Suite 1234',
+    },
+    href: props.href,
+  }
+</script>
+
+<tr>
+  <td>
+    <table align="center" class="email-footer w-[570px] mx-auto text-center sm:w-full">
+      <tr>
+        <td align="center" class="content-cell p-[45px] text-base">
+          <p class="mt-1.5 mb-5 text-xs/6 text-center text-gray-postmark-light">
+            &copy; {{ page.year }} {{ company.product }}. All rights reserved.
+          </p>
+          <p class="mt-1.5 mb-5 text-xs/6 text-center text-gray-postmark-light">
+            {{ company.name }}
+            <br>
+            {{{ company.address }}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

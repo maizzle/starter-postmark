@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" style="color-scheme: light dark;">
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
 <head>
   <meta charset="utf-8">
   <meta name="x-apple-disable-message-reformatting">
@@ -23,12 +23,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet" media="screen">
   <style>
-    @media (max-width: 600px) {
-      .button {
-        width: 100% !important;
-        text-align: center !important;
-      }
-    }
     .body-sub {
       margin-top: 25px;
       border-top-width: 1px;
@@ -45,7 +39,7 @@
       .email-masthead,
       .email-footer {
         background-color: #333333 !important;
-        color: #fff !important;
+        color: #fffffe !important;
       }
       p,
       ul,
@@ -54,7 +48,7 @@
       h1,
       h2,
       h3 {
-        color: #fff !important;
+        color: #fffffe !important;
       }
       .attributes_content {
         background-color: #222222 !important;
@@ -63,9 +57,6 @@
         text-shadow: none !important;
       }
     }
-    :root {
-      color-scheme: light dark;
-    }
     @media (max-width: 600px) {
       .sm-w-full {
         width: 100% !important;
@@ -73,57 +64,51 @@
     }
   </style>
 </head>
-<body style="word-break: break-word; -webkit-font-smoothing: antialiased; margin: 0; width: 100%; padding: 0">
+<body style="margin: 0; width: 100%; padding: 0; -webkit-font-smoothing: antialiased; word-break: break-word">
   <div role="article" aria-roledescription="email" aria-label lang="en">
-    <table class="email-wrapper" style="width: 100%; font-family: 'Nunito Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" cellpadding="0" cellspacing="0" role="presentation">
+    <table class="email-wrapper" style="width: 100%; font-family: 'Nunito Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" cellpadding="0" cellspacing="0" role="none">
       <tr>
         <td align="center">
-          <table class="email-content" style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+          <table class="email-content" style="width: 100%" cellpadding="0" cellspacing="0" role="none">
             <tr>
               <td align="center" class="email-masthead" style="padding-top: 25px; padding-bottom: 25px; text-align: center; font-size: 16px">
-                <a href="https://example.com" class="email-masthead_name" style="text-decoration: none; text-shadow: 0 1px 0 #FFF; font-size: 16px; font-weight: 700; color: #A8AAAF">
+                <a href="https://example.com" class="email-masthead_name" style="font-size: 16px; font-weight: 700; color: #A8AAAF; text-decoration: none; text-shadow: 0 1px 0 #FFF">
                   [Product Name]
                 </a>
               </td>
             </tr>
             <tr>
-              <td class="email-body" style="width: 100%; background-color: #fff">
-                <table align="center" class="email-body_inner sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; background-color: #fff" cellpadding="0" cellspacing="0" role="presentation">
+              <td class="email-body" style="width: 100%; background-color: #fffffe">
+                <table align="center" class="email-body_inner sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; background-color: #fffffe" cellpadding="0" cellspacing="0" role="none">
                   <tr>
                     <td style="padding: 45px">
                       <div style="font-size: 16px">
                         <h1 style="margin-top: 0; text-align: left; font-size: 24px; font-weight: 700; color: #333333">
-                          Your [[ page.company.product ]] trial expired
+                          Your [Product Name] trial expired
                         </h1>
-                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">
-                          Thanks for trying [[ page.company.product ]]. You've added a lot of data, so here are several options for you to consider going forward.
+                        <p style="margin: 6px 0 5px; font-size: 16px; line-height: 24px; color: #51545E">
+                          Thanks for trying [Product Name]. You've added a lot of data, so here are several options for you to consider going forward.
                         </p>
-                        <table align="center" style="margin: 30px auto; width: 100%; text-align: center" cellpadding="0" cellspacing="0" role="presentation">
+                        <table style="margin: 30px 0; width: 100%" cellpadding="0" cellspacing="0" role="none">
                           <tr>
-                            <td align="center">
-                              <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
-                                <tr>
-                                  <td align="center" style="font-size: 16px">
-                                    <a href="{{action_url}}" style="display: inline-block; color: #fff; text-decoration-line: none; border-radius: 3px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16); background-color: #22BC66; border-color: #22bc66; border-style: solid; border-width: 10px 18px">Upgrade your account</a>
-                                  </td>
-                                </tr>
-                              </table>
+                            <td style="text-align: center; font-size: 16px">
+                              <a href="{{action_url}}" style="display: inline-block; color: #fffffe; text-decoration: none; border-radius: 3px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16); background-color: #22BC66; border-color: #22bc66; border-style: solid; border-width: 10px 18px">Upgrade your account</a>
                             </td>
                           </tr>
                         </table>
-                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">
+                        <p style="margin: 6px 0 5px; font-size: 16px; line-height: 24px; color: #51545E">
                           If you're not ready to upgrade to a paying account, you have a few other options available to you...
                         </p>
-                        <table style="margin-bottom: 21px; width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                        <table style="margin-bottom: 21px; width: 100%" cellpadding="0" cellspacing="0" role="none">
                           <tr>
                             <td class="attributes_content" style="background-color: #F4F4F7; padding: 16px">
-                              <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                              <table style="width: 100%" cellpadding="0" cellspacing="0" role="none">
                                 <tr>
                                   <td style="padding-bottom: 16px">
                                     <div style="font-size: 16px">
                                       <strong>
-                                          <a href="{{trial_extension_url}}" style="color: #3869D4">Restart your trial</a>
-                                        </strong>
+                                      <a href="{{trial_extension_url}}" style="color: #3869D4">Restart your trial</a>
+                                    </strong>
                                       - If you didn't get a chance to fully try out the product or need a little more time to evaluate, just let us know. Simply reply to this email and we'll extend your trial period.
                                     </div>
                                   </td>
@@ -132,9 +117,9 @@
                                   <td style="padding-bottom: 16px">
                                     <div style="font-size: 16px">
                                       <strong>
-                                          <a href="{{feedback_url}}" style="color: #3869D4">Share feedback</a>
-                                        </strong>
-                                      - If [[ page.company.product ]] isn't right for you, let us know what you were looking for and we might be able to suggest some alternatives that might be a better fit.
+                                      <a href="{{feedback_url}}" style="color: #3869D4">Share feedback</a>
+                                    </strong>
+                                      - If [Product Name] isn't right for you, let us know what you were looking for and we might be able to suggest some alternatives that might be a better fit.
                                     </div>
                                   </td>
                                 </tr>
@@ -142,9 +127,9 @@
                                   <td style="padding-bottom: 16px">
                                     <div style="font-size: 16px">
                                       <strong>
-                                          <a href="{{export_url}}" style="color: #3869D4">Export your data</a>
-                                        </strong>
-                                      - If [[ page.company.product ]] wasn't a good fit, you can export your data for use elsewhere.
+                                      <a href="{{export_url}}" style="color: #3869D4">Export your data</a>
+                                    </strong>
+                                      - If [Product Name] wasn't a good fit, you can export your data for use elsewhere.
                                     </div>
                                   </td>
                                 </tr>
@@ -152,8 +137,8 @@
                                   <td>
                                     <div style="font-size: 16px">
                                       <strong>
-                                          <a href="{{close_account_url}}" style="color: #3869D4">Close your account</a>
-                                        </strong>
+                                      <a href="{{close_account_url}}" style="color: #3869D4">Close your account</a>
+                                    </strong>
                                       - You can close your account and delete your data. Or, do nothing and we'll automatically close it and delete your data for you in 90 days.
                                       But don't worry, we'll send you another email before that happens.
                                     </div>
@@ -163,15 +148,15 @@
                             </td>
                           </tr>
                         </table>
-                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">
-                          Regardless of your choice, we want to say thank you for trying [[ page.company.product ]].
+                        <p style="margin: 6px 0 5px; font-size: 16px; line-height: 24px; color: #51545E">
+                          Regardless of your choice, we want to say thank you for trying [Product Name].
                           We know it's an investment of your time, and we appreciate you giving us a chance.
                         </p>
-                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">
+                        <p style="margin: 6px 0 5px; font-size: 16px; line-height: 24px; color: #51545E">
                           Thanks,
-                          <br>[[ page.company.sender ]] and the [[ page.company.product ]] Team
+                          <br>[Sender Name] and the [Product Name] Team
                         </p>
-                        <p style="margin-top: 6px; margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #51545E">
+                        <p style="margin: 6px 0 5px; font-size: 16px; line-height: 24px; color: #51545E">
                           <strong>P.S.</strong> If you have any questions or need any help, please don't hesitate to reach out.
                           You can reply to this email or join us on live chat during business hours.
                         </p>
@@ -183,15 +168,16 @@
             </tr>
             <tr>
               <td>
-                <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; text-align: center" cellpadding="0" cellspacing="0" role="presentation">
+                <table align="center" class="email-footer sm-w-full" style="margin-left: auto; margin-right: auto; width: 570px; text-align: center" cellpadding="0" cellspacing="0" role="none">
                   <tr>
                     <td align="center" style="padding: 45px; font-size: 16px">
-                      <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
-                        &copy; 2022 [Product Name]. All rights reserved.
+                      <p style="margin-bottom: 20px; margin-top: 6px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
+                        &copy; 2025 [Product Name]. All rights reserved.
                       </p>
-                      <p style="margin-top: 6px; margin-bottom: 20px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
-                        [Company Name, LLC] <br>1234 Street Rd.
-                        <br>Suite 1234
+                      <p style="margin-bottom: 20px; margin-top: 6px; text-align: center; font-size: 12px; line-height: 24px; color: #A8AAAF">
+                        [Company Name, LLC]
+                        <br>
+                        1234 Street Rd. <br>Suite 1234
                       </p>
                     </td>
                   </tr>

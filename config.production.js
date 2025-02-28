@@ -1,24 +1,26 @@
 /*
 |-------------------------------------------------------------------------------
-| Production config           https://maizzle.com/docs/environments/#production
+| Production config                       https://maizzle.com/docs/environments
 |-------------------------------------------------------------------------------
 |
-| This is where you define settings that optimize your emails for production.
-| These will be merged on top of the base config.js, so you only need to
-| specify the options that are changing.
+| This is the production configuration that Maizzle will use when you run the
+| `npm run build` command. Settings here will be merged on top of the base
+| `config.js`, so you only need to add the options that are changing.
 |
 */
 
-module.exports = {
+/** @type {import('@maizzle/framework').Config} */
+export default {
   build: {
-    templates: {
-      destination: {
-        path: 'dist',
-      },
+    output: {
+      path: 'dist',
+      from: 'emails',
     },
   },
-  inlineCSS: true,
+  css: {
+    inline: true,
+    purge: true,
+    shorthand: true,
+  },
   prettify: true,
-  removeUnusedCSS: true,
-  shorthandInlineCSS: true,
 }

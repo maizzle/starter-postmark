@@ -1,0 +1,106 @@
+---
+bodyClass: bg-gray-postmark-lighter
+---
+
+<x-main>
+  <table class="email-wrapper w-full bg-gray-postmark-lighter font-sans">
+    <tr>
+      <td align="center">
+        <table class="email-content w-full">
+          <x-header />
+          <tr>
+            <td class="email-body w-full bg-white">
+              <table align="center" class="email-body_inner w-[570px] bg-white mx-auto sm:w-full">
+                <tr>
+                  <td class="p-[45px]">
+                    <div class="text-base">
+                      <h1 class="mt-0 text-2xl font-bold text-left text-gray-postmark-darker">
+                        Your {{ page.company.product }} trial ends in 3 days
+                      </h1>
+                      <p class="m-0 mt-1.5 mb-[5px] text-base/6 text-gray-postmark-dark">
+                        Thanks for trying  {{ page.company.product }}.
+                        You've added a lot of data, so here are several options for you to consider going forward.
+                      </p>
+                      <table class="w-full m-0 my-7.5">
+                        <tr>
+                          <td class="text-base text-center">
+                            <a href="{{action_url}}" class="button button--green">Upgrade your account</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <p class="m-0 mt-1.5 mb-[5px] text-base/6 text-gray-postmark-dark">
+                        If you're not ready to upgrade to a paying account, you have a few other options available to you...
+                      </p>
+                      <table class="w-full mb-[21px]">
+                        <tr>
+                          <td class="attributes_content p-4 bg-gray-postmark-lightest">
+                            <table class="w-full">
+                              <tr>
+                                <td class="pb-4">
+                                  <div class="text-base">
+                                    <strong>
+                                      <a href="{{trial_extension_url}}" class="text-blue-postmark">Restart your trial</a>
+                                    </strong>
+                                    - If you didn't get a chance to fully try out the product or need a little more time to evaluate, just let us know. Simply reply to this email and we'll extend your trial period.
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="pb-4">
+                                  <div class="text-base">
+                                    <strong>
+                                      <a href="{{feedback_url}}" class="text-blue-postmark">Share feedback</a>
+                                    </strong>
+                                    - If {{ page.company.product }} isn't right for you, let us know what you were looking for and we might be able to suggest some alternatives that might be a better fit.
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="pb-4">
+                                  <div class="text-base">
+                                    <strong>
+                                      <a href="{{export_url}}" class="text-blue-postmark">Export your data</a>
+                                    </strong>
+                                    - If {{ page.company.product }} wasn't a good fit, you can export your data for use elsewhere.
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="text-base">
+                                    <strong>
+                                      <a href="{{close_account_url}}" class="text-blue-postmark">Close your account</a>
+                                    </strong>
+                                    - You can close your account and delete your data. Or, do nothing and we'll automatically close it and delete your data for you in 90 days.
+                                    But don't worry, we'll send you another email before that happens.
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <p class="m-0 mt-1.5 mb-[5px] text-base/6 text-gray-postmark-dark">
+                        Regardless of your choice, we want to say thank you for trying {{ page.company.product }}.
+                        We know it's an investment of your time, and we appreciate you giving us a chance.
+                      </p>
+                      <p class="m-0 mt-1.5 mb-[5px] text-base/6 text-gray-postmark-dark">
+                        Thanks,
+                        <br>{{ page.company.sender }} and the {{ page.company.product }} Team
+                      </p>
+                      <p class="m-0 mt-1.5 mb-[5px] text-base/6 text-gray-postmark-dark">
+                        <strong>P.S.</strong> If you have any questions or need any help, please don't hesitate to reach out.
+                        You can reply to this email or join us on live chat during business hours.
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <x-footer />
+        </table>
+      </td>
+    </tr>
+  </table>
+</x-main>
